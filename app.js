@@ -41,6 +41,7 @@
   var topicFilter = null;
   var currentTopicId = null;
   var currentTopicTab = "conteudo";
+  var currentMaterialType = null;
 
   function defaultContent() {
     return { v: 1, records: {}, plan: {}, lastTopic: null, reviewDone: {} };
@@ -769,6 +770,7 @@
   function openTopic(topicId) {
     currentTopicId = topicId;
     currentTopicTab = "conteudo";
+    currentMaterialType = null;
     var entry = getTopicById(topicId);
     if (entry) contentState.lastTopic = topicId;
     saveContent();
@@ -1259,26 +1261,47 @@
     return row;
   }
 
+  function escapeHtml(str) {
+    return String(str == null ? "" : str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
   function isYoutubeSearchUrl(url) {
     return typeof url === "string" && url.indexOf("youtube.com/results") !== -1;
   }
 
-  function youtubeEmbedId(url) {
+  function isValidYoutubeVideoId(id) {
+    if (typeof id !== "string") return false;
+    return /^[A-Za-z0-9_-]{11}$/.test(id.trim());
+  }
+
+  function youtubeEmbedIdFromUrl(url) {
     if (!url || typeof url !== "string") return null;
     if (isYoutubeSearchUrl(url)) return null;
-    var m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([A-Za-z0-9_-]{11})/);
+    var m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube-nocookie\.com\/embed\/)([A-Za-z0-9_-]{11})/);
     return m ? m[1] : null;
   }
 
+  function resolveOfficialVideoId(v) {
+    if (!v) return null;
+    if (isValidYoutubeVideoId(v.videoId)) return v.videoId.trim();
+    return youtubeEmbedIdFromUrl(v.url);
+  }
+
   function topicVideoBlock(v) {
-    var embedId = youtubeEmbedId(v.url);
+    var embedId = resolveOfficialVideoId(v);
     var html = '<article class="topic-lesson">';
-    html += "<h3>" + v.titulo + "</h3>";
+    html += "<h3>" + escapeHtml(v.titulo) + "</h3>";
     html += '<p class="muted small">' + (v.tipo === "complementar" ? "Complementar" : "Principal") +
-      (v.canal ? " · " + v.canal : "") + "</p>";
+      (v.canal ? " · " + escapeHtml(v.canal) : "") + "</p>";
     if (embedId) {
       html += '<div class="topic-player"><iframe src="https://www.youtube.com/embed/' + embedId +
-        '" title="' + v.titulo + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+        '" title="' + escapeHtml(v.titulo) +
+        '" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"' +
+        ' allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>';
     } else if (isYoutubeSearchUrl(v.url) || !v.url) {
       html += '<div class="topic-player topic-player-placeholder">';
       html += '<p class="muted small">A aula específica será vinculada posteriormente. O registro atual é apenas uma busca no YouTube, não um player.</p>';
@@ -1286,6 +1309,168 @@
     }
     html += "</article>";
     return html;
+  }
+
+  function topicOfficialMaterials(topicId) {
+    return (window.DATA_MATERIAIS || []).filter(function (item) {
+      return item && item.topicId === topicId && item.tipo === "oficial";
+    });
+  }
+
+  function topicVisualSummaries(topicId) {
+    var seen = {};
+    var list = [];
+    function add(item) {
+      if (!item || item.topicId !== topicId) return;
+      if (item.tipo && item.tipo !== "visual") return;
+      var key = (item.imagem || "") + "|" + (item.titulo || "");
+      if (seen[key]) return;
+      seen[key] = true;
+      list.push(item);
+    }
+    (window.DATA_RESUMOS_VISUAIS || []).forEach(add);
+    (window.DATA_MATERIAIS || []).forEach(function (item) {
+      if (item && item.tipo === "visual") add(item);
+    });
+    return list;
+  }
+
+  function materialsEmptyNote() {
+    return '<p class="muted small materials-empty">Material ainda não cadastrado.</p>';
+  }
+
+  function officialMaterialBlock(item) {
+    var html = '<article class="material-item">';
+    html += "<h3>" + escapeHtml(item.titulo || "Material oficial") + "</h3>";
+    html += '<p class="muted small">' +
+      escapeHtml(item.fonte || "") +
+      (item.tipoDoc ? (item.fonte ? " · " : "") + escapeHtml(item.tipoDoc) : "") +
+      "</p>";
+    if (item.descricao) html += '<p class="small">' + escapeHtml(item.descricao) + "</p>";
+    if (item.url) {
+      html += '<a class="material-link" href="' + escapeHtml(item.url) +
+        '" target="_blank" rel="noopener noreferrer">Abrir fonte oficial</a>';
+    }
+    html += "</article>";
+    return html;
+  }
+
+  function visualSummaryBlock(item) {
+    var html = '<article class="material-item">';
+    html += "<h3>" + escapeHtml(item.titulo || "Resumo visual") + "</h3>";
+    if (item.subtitulo) html += '<p class="muted small">' + escapeHtml(item.subtitulo) + "</p>";
+    if (item.descricao) html += '<p class="small">' + escapeHtml(item.descricao) + "</p>";
+    if (item.imagem) {
+      html += '<figure class="visual-summary-figure">';
+      html += '<img src="' + escapeHtml(item.imagem) + '" alt="' +
+        escapeHtml(item.titulo || "Resumo visual") + '" class="visual-summary-image">';
+      html += "</figure>";
+    }
+    html += "</article>";
+    return html;
+  }
+
+  function materialsVideoHtml(mainVideos, extraVideos, missingVideo, topicVideos, userVideos) {
+    var html = "";
+    if (mainVideos.length || extraVideos.length) {
+      mainVideos.forEach(function (v) { html += topicVideoBlock(v); });
+      extraVideos.forEach(function (v) { html += topicVideoBlock(v); });
+    } else if (missingVideo && !(userVideos && userVideos.length)) {
+      html += '<div class="notice">' + escapeHtml(topicVideos[0].motivo || "Material ainda não cadastrado.") + "</div>";
+    }
+    if (userVideos && userVideos.length) {
+      html += '<h3 class="sec-sub">Minhas videoaulas</h3><div class="topic-user-videos materials-user-videos"></div>';
+    }
+    return html;
+  }
+
+  function materialsQuestionsHtml(questions, bankStats) {
+    var html = "";
+    if (questions && questions.length) {
+      if (bankStats && bankStats.total) {
+        html += '<p class="muted small">Banco: ' + bankStats.total + " questões deste assunto.</p>";
+      }
+      questions.forEach(function (q) {
+        var a = state.answers[q.id];
+        var tag = a ? (a.correct ? '<span class="ok">acertou</span>' : '<span class="err">errou</span>') : '<span class="pending">não respondida</span>';
+        html += '<div class="mini-q"><div class="mini-q-head"><span>' + questionNodeLabel(q) + " - " + difficultyLabel(q.dificuldade) + "</span>" + tag + "</div>" + q.statement + "</div>";
+      });
+      html += '<button class="btn primary block" data-act="practice">Responder questões deste assunto</button>';
+    } else {
+      html += materialsEmptyNote();
+    }
+    return html;
+  }
+
+  function materialsSectionHtml(topic, mainVideos, extraVideos, missingVideo, topicVideos, userVideos, questions, bankStats) {
+    var official = topicOfficialMaterials(topic.id);
+    var visuals = topicVisualSummaries(topic.id);
+    var hasVideo = (mainVideos && mainVideos.length) || (extraVideos && extraVideos.length) || (userVideos && userVideos.length);
+    var hasOfficial = official.length > 0;
+    var hasVisual = visuals.length > 0;
+    var hasQuestions = questions && questions.length > 0;
+    var available = [];
+    if (hasVideo) available.push("videoaula");
+    if (hasOfficial) available.push("oficial");
+    if (hasVisual) available.push("visual");
+    if (hasQuestions) available.push("questoes");
+    if (!available.length) return "";
+    var type = currentMaterialType;
+    if (type && available.indexOf(type) === -1) type = null;
+    var labels = {
+      videoaula: "Videoaula",
+      oficial: "Material oficial",
+      visual: "Resumo visual",
+      questoes: "Quest\u00f5es"
+    };
+    var html = '<div class="materials-box">';
+    html += "<h3 class=\"materials-heading\">Materiais de estudo</h3>";
+    html += '<div class="materials-grid materials-count-' + available.length + '" role="tablist">';
+    available.forEach(function (key) {
+      html += '<button type="button" class="materials-type' + (type === key ? " active" : "") +
+        '" data-material="' + key + '">' + labels[key] + "</button>";
+    });
+    html += "</div>";
+    if (hasVideo) {
+      html += '<div class="materials-pane' + (type === "videoaula" ? " active" : "") + '" data-material-pane="videoaula">';
+      html += materialsVideoHtml(mainVideos, extraVideos, missingVideo, topicVideos, userVideos);
+      html += "</div>";
+    }
+    if (hasOfficial) {
+      html += '<div class="materials-pane' + (type === "oficial" ? " active" : "") + '" data-material-pane="oficial">';
+      official.forEach(function (item) { html += officialMaterialBlock(item); });
+      html += "</div>";
+    }
+    if (hasVisual) {
+      html += '<div class="materials-pane' + (type === "visual" ? " active" : "") + '" data-material-pane="visual">';
+      visuals.forEach(function (item) { html += visualSummaryBlock(item); });
+      html += "</div>";
+    }
+    if (hasQuestions) {
+      html += '<div class="materials-pane' + (type === "questoes" ? " active" : "") + '" data-material-pane="questoes">';
+      html += materialsQuestionsHtml(questions, bankStats);
+      html += "</div>";
+    }
+    html += "</div>";
+    return html;
+  }
+
+  function bindMaterialsSwitcher(wrap) {
+    var buttons = wrap.querySelectorAll(".materials-type");
+    var panes = wrap.querySelectorAll(".materials-pane");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].onclick = function (ev) {
+        var next = ev.currentTarget.getAttribute("data-material");
+        currentMaterialType = currentMaterialType === next ? null : next;
+        var k;
+        for (k = 0; k < buttons.length; k++) {
+          buttons[k].classList.toggle("active", buttons[k].getAttribute("data-material") === currentMaterialType);
+        }
+        for (k = 0; k < panes.length; k++) {
+          panes[k].classList.toggle("active", panes[k].getAttribute("data-material-pane") === currentMaterialType);
+        }
+      };
+    }
   }
 
   function renderTopicDetail() {
@@ -1391,6 +1576,7 @@
     if (topicContent && topicContent.atualizacao) {
       html += '<div class="notice">Conteúdo sujeito a atualização periódica. Revise com fontes oficiais antes da prova.</div>';
     }
+    html += materialsSectionHtml(topic, mainVideos, extraVideos, missingVideo, topicVideos, videos, questions, topicBankStats(topic.id));
     html += "</section>";
 
     html += '<section class="card topic-panel' + (tab === "aula" ? " active" : "") + '" data-panel="aula">';
@@ -1450,12 +1636,13 @@
     html += "</div></div>";
     wrap.innerHTML = html;
 
-    var userVideosWrap = wrap.querySelector(".topic-user-videos");
-    if (userVideosWrap && videos.length) {
+    var userVideosWraps = wrap.querySelectorAll(".topic-user-videos");
+    for (var uv = 0; uv < userVideosWraps.length; uv++) {
       videos.forEach(function (v) {
-        userVideosWrap.appendChild(createUserVideoAnchor(v, "video-mini"));
+        userVideosWraps[uv].appendChild(createUserVideoAnchor(v, "video-mini"));
       });
     }
+    bindMaterialsSwitcher(wrap);
 
     var checks = wrap.querySelectorAll("input[type=checkbox]");
     for (var i = 0; i < checks.length; i++) {
@@ -1470,8 +1657,10 @@
     if (finishBtn) finishBtn.onclick = function () { toggleStudied(topic.id); };
     var reviewBtn = wrap.querySelector('[data-act="review"]');
     if (reviewBtn) reviewBtn.onclick = function () { reviewTopic(topic.id); };
-    var practice = wrap.querySelector('[data-act="practice"]');
-    if (practice) practice.onclick = function () { practiceTopic(topic.id); };
+    var practiceBtns = wrap.querySelectorAll('[data-act="practice"]');
+    for (var pb = 0; pb < practiceBtns.length; pb++) {
+      practiceBtns[pb].onclick = function () { practiceTopic(topic.id); };
+    }
 
     var tabs = wrap.querySelectorAll(".topic-tab");
     for (var t = 0; t < tabs.length; t++) {

@@ -255,15 +255,39 @@
 
 </main>
 
-<nav class="bottom-nav">
-  <button class="nav-btn active" data-screen="home"><span>Início</span></button>
-  <button class="nav-btn" data-screen="subjects"><span>Matérias</span></button>
-  <button class="nav-btn" data-screen="plan"><span>Plano</span></button>
-  <button class="nav-btn" data-screen="questions"><span>Questões</span></button>
-  <button class="nav-btn" data-screen="review"><span>Revisão</span></button>
-  <button class="nav-btn" data-screen="performance"><span>Desempenho</span></button>
-  <button class="nav-btn" data-screen="simulado"><span>Simulado</span></button>
-  <button class="nav-btn" data-screen="videos"><span>Vídeos</span></button>
+<nav class="bottom-nav" aria-label="Navegação principal">
+  <button class="nav-btn active" data-screen="home">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.8 12 4l8 6.8V20a1 1 0 0 1-1 1h-5.2v-6.4H10.2V21H5a1 1 0 0 1-1-1z"/></svg>
+    <span>Início</span>
+  </button>
+  <button class="nav-btn" data-screen="subjects">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.2c0-.9.8-1.7 1.8-1.7H19v15.2H6.8A1.8 1.8 0 0 0 5 20.5V5.2z"/><path d="M5 20.5c0-.9.8-1.7 1.8-1.7H19"/><path d="M9 8h6.5M9 11.5h5"/></svg>
+    <span>Matérias</span>
+  </button>
+  <button class="nav-btn" data-screen="plan">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M8 3.5v4M16 3.5v4M4 10h16"/></svg>
+    <span>Plano</span>
+  </button>
+  <button class="nav-btn" data-screen="questions">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.6a2.5 2.5 0 0 1 4.7.7c0 1.6-2.3 1.9-2.3 3.3"/><circle cx="12" cy="17.2" r="0.85" fill="currentColor" stroke="none"/></svg>
+    <span>Questões</span>
+  </button>
+  <button class="nav-btn" data-screen="review">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4.8v5.4h-5.4"/></svg>
+    <span>Revisão</span>
+  </button>
+  <button class="nav-btn" data-screen="performance">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V10.5M12 19V5M20 19v-6.5"/><path d="M3 19h18"/></svg>
+    <span>Desempenho</span>
+  </button>
+  <button class="nav-btn" data-screen="simulado">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5.2" width="12" height="15.3" rx="2"/><path d="M9 5.2V4.2A1.2 1.2 0 0 1 10.2 3h3.6A1.2 1.2 0 0 1 15 4.2v1"/><path d="M9 11h6M9 14.5h4"/></svg>
+    <span>Simulado</span>
+  </button>
+  <button class="nav-btn" data-screen="videos">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="6" width="12.6" height="12" rx="2"/><path d="M15.8 10 20.8 7.4v9.2L15.8 14z"/></svg>
+    <span>Vídeos</span>
+  </button>
 </nav>
 
 <script src="data/questions.js"></script>
@@ -274,6 +298,7 @@
 <script src="data/questions-legislacao.js"></script>
 <script src="data/content.js"></script>
 <script src="data/videoaulas.js"></script>
+<script src="data/materiais.js"></script>
 <script src="data/videos.js"></script>
 <script src="data/syllabus.js"></script>
 <script src="data/ai-config.js"></script>

@@ -1,4 +1,4 @@
-var CACHE_NAME = "dmae2026-v16";
+var CACHE_NAME = "dmae2026-v18";
 var APP_SHELL = [
   "./",
   "./index.html",
@@ -13,12 +13,18 @@ var APP_SHELL = [
   "./data/questions-legislacao.js",
   "./data/content.js",
   "./data/videoaulas.js",
+  "./data/materiais.js",
   "./data/ai-config.js",
   "./data/videos.js",
   "./data/syllabus.js",
   "./icon/icon.png",
   "./icon/icon-192.png",
-  "./icon/icon-512.png"
+  "./icon/icon-512.png",
+  "./visuais/esp-hidrometro-classe-i-padrao-instalacao.svg",
+  "./visuais/esp-funcionamento-leitura-hidrometros.svg",
+  "./visuais/esp-calculo-consumo-conversao-volume.svg",
+  "./visuais/esp-estrutura-tarifaria.svg",
+  "./visuais/mat-conjuntos.svg"
 ];
 
 self.addEventListener("install", function (event) {
