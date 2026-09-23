@@ -27,15 +27,6 @@ html, body {
 html {
   min-height: 100%;
   background-color: #071422;
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-color: #071422;
   background-image:
     radial-gradient(ellipse 46% 32% at 8% 14%, #122844 0 68%, transparent 69%),
     radial-gradient(ellipse 38% 44% at 78% 8%, #0c1d33 0 66%, transparent 67%),
@@ -53,6 +44,7 @@ html::before {
     repeating-linear-gradient(108deg, rgba(0, 0, 0, 0.05) 0 1px, transparent 1px 9px);
   background-size: 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px;
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 body {
@@ -75,7 +67,7 @@ p { margin: 0 0 10px; line-height: 1.5; }
 .topbar {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 60;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -447,7 +439,7 @@ select, input {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 30;
+  z-index: 80;
   display: flex;
   background: rgba(7, 20, 34, .94);
   backdrop-filter: blur(12px) saturate(120%);
