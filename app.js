@@ -40,6 +40,7 @@
   var contentState = loadContent();
   var topicFilter = null;
   var currentTopicId = null;
+  var currentTopicTab = "conteudo";
 
   function defaultContent() {
     return { v: 1, records: {}, plan: {}, lastTopic: null, reviewDone: {} };
@@ -767,6 +768,7 @@
 
   function openTopic(topicId) {
     currentTopicId = topicId;
+    currentTopicTab = "conteudo";
     var entry = getTopicById(topicId);
     if (entry) contentState.lastTopic = topicId;
     saveContent();
@@ -974,6 +976,7 @@
     if (name === "review") renderReview();
     if (name === "home") renderHome();
     if (name === "subjects") renderSubjects();
+    document.body.classList.toggle("topic-wide", name === "topic");
     if (name === "topic") renderTopicDetail();
   }
 
@@ -1256,6 +1259,35 @@
     return row;
   }
 
+  function isYoutubeSearchUrl(url) {
+    return typeof url === "string" && url.indexOf("youtube.com/results") !== -1;
+  }
+
+  function youtubeEmbedId(url) {
+    if (!url || typeof url !== "string") return null;
+    if (isYoutubeSearchUrl(url)) return null;
+    var m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([A-Za-z0-9_-]{11})/);
+    return m ? m[1] : null;
+  }
+
+  function topicVideoBlock(v) {
+    var embedId = youtubeEmbedId(v.url);
+    var html = '<article class="topic-lesson">';
+    html += "<h3>" + v.titulo + "</h3>";
+    html += '<p class="muted small">' + (v.tipo === "complementar" ? "Complementar" : "Principal") +
+      (v.canal ? " · " + v.canal : "") + "</p>";
+    if (embedId) {
+      html += '<div class="topic-player"><iframe src="https://www.youtube.com/embed/' + embedId +
+        '" title="' + v.titulo + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+    } else if (isYoutubeSearchUrl(v.url) || !v.url) {
+      html += '<div class="topic-player topic-player-placeholder">';
+      html += '<p class="muted small">A aula específica será vinculada posteriormente. O registro atual é apenas uma busca no YouTube, não um player.</p>';
+      html += "</div>";
+    }
+    html += "</article>";
+    return html;
+  }
+
   function renderTopicDetail() {
     var wrap = $("topic-detail");
     var entry = currentTopicId ? getTopicById(currentTopicId) : null;
@@ -1287,42 +1319,71 @@
     var extraVideos = topicVideos.filter(function (v) { return !v.semVideo && v.tipo === "complementar"; });
     var missingVideo = topicVideos.length > 0 && topicVideos.every(function (v) { return v.semVideo; });
     var topicContent = (window.DATA_CONTENT || {})[topic.id];
+    var tab = currentTopicTab || "conteudo";
 
-    var html = '<div class="card" style="border-left:5px solid ' + info.color + '">' +
+    var html = '<div class="topic-layout">';
+    html += '<div class="card topic-hero" style="border-left:5px solid ' + info.color + '">' +
       '<div class="acc-meta"><span style="color:' + info.color + '">' + subject.name + "</span></div>" +
-      "<h1>" + topic.name + "</h1>" +
-      '<div class="topic-head" style="justify-content:flex-start;gap:10px;margin:8px 0">' +
-      '<span class="badge" style="background:' + meta.color + '">' + meta.label + '</span>' +
-      '<span class="priority-chip">Importância ' + importance + '/5</span>' +
-      '<span class="priority-chip">Prioridade ' + score + '</span></div>' +
+      '<h1 class="topic-hero-title">' + topic.name + "</h1>" +
+      '<div class="topic-head topic-hero-meta">' +
+      '<span class="badge" style="background:' + meta.color + '">' + meta.label + "</span>" +
+      '<span class="priority-chip">Importância ' + importance + "/5</span>" +
+      '<span class="priority-chip">Prioridade ' + score + "</span></div>" +
       '<div class="bar"><div class="bar-fill" style="width:' + progress + "%;background:" + info.color + '"></div></div>' +
-      '<div class="stat-row">' +
-      '<div class="stat-pill"><strong>' + progress + '%</strong><span>progresso</span></div>' +
-      '<div class="stat-pill"><strong>' + topicBankSize(topic.id) + '</strong><span>no banco</span></div>' +
-      '<div class="stat-pill"><strong>' + acc.total + '</strong><span>respondidas</span></div>' +
-      '<div class="stat-pill"><strong>' + acc.ok + '</strong><span>acertos</span></div>' +
-      '<div class="stat-pill"><strong>' + acc.wrong + '</strong><span>erros</span></div>' +
-      "</div>" +
-      '<div class="topic-sub">Última revisão: ' + formatDate(rec.lastReview) + " - último estudo: " + formatDate(rec.lastStudy) + "</div>" +
+      '<div class="topic-sub">Progresso ' + progress + "%</div>" +
       "</div>";
 
-    html += '<div class="card"><h2>Conteúdo</h2>';
+    html += '<div class="topic-tabs" role="tablist">' +
+      '<button type="button" class="topic-tab' + (tab === "conteudo" ? " active" : "") + '" data-tab="conteudo" role="tab">Conteúdo</button>' +
+      '<button type="button" class="topic-tab' + (tab === "aula" ? " active" : "") + '" data-tab="aula" role="tab">Aula</button>' +
+      '<button type="button" class="topic-tab' + (tab === "questoes" ? " active" : "") + '" data-tab="questoes" role="tab">Questões</button>' +
+      '<button type="button" class="topic-tab' + (tab === "progresso" ? " active" : "") + '" data-tab="progresso" role="tab">Progresso</button>' +
+      "</div>";
+
+    html += '<div class="topic-panels">';
+
+    html += '<section class="card topic-panel' + (tab === "conteudo" ? " active" : "") + '" data-panel="conteudo">';
+    html += "<h2>Conteúdo</h2>";
     if (topicContent && topicContent.resumo) {
-      html += '<p class="small">' + topicContent.resumo + "</p>";
+      html += '<div class="content-block"><h3 class="sec-sub">Resumo</h3><p class="small">' + topicContent.resumo + "</p></div>";
     } else {
       html += '<p class="muted small">Conteúdo em preparação para este assunto. Consulte o texto do edital.</p>';
     }
     if (topicContent && topicContent.conceitos && topicContent.conceitos.length) {
-      html += '<h3 class="sec-sub">Conceitos que você precisa dominar</h3><div class="subtopic-list">' +
+      html += '<div class="content-block"><h3 class="sec-sub">Conceitos que você precisa dominar</h3><div class="subtopic-list">' +
         topicContent.conceitos.map(function (c) {
           return '<div class="subtopic-item"><span>' + c + "</span></div>";
-        }).join("") + "</div>";
+        }).join("") + "</div></div>";
     }
     if (topicContent && topicContent.termos && topicContent.termos.length) {
-      html += '<h3 class="sec-sub">Termos e definições</h3><div class="term-list">' +
+      html += '<div class="content-block"><h3 class="sec-sub">Termos e definições</h3><div class="term-list">' +
         topicContent.termos.map(function (t) {
           return '<div class="term-item"><strong>' + t.t + "</strong><span>" + t.d + "</span></div>";
-        }).join("") + "</div>";
+        }).join("") + "</div></div>";
+    }
+    if (topicContent && topicContent.pontos && topicContent.pontos.length) {
+      html += '<div class="content-block highlight-block"><h3 class="sec-sub">Pontos importantes</h3><div class="subtopic-list">' +
+        topicContent.pontos.map(function (p) {
+          return '<div class="subtopic-item"><span>' + p + "</span></div>";
+        }).join("") + "</div></div>";
+    }
+    if (topicContent && topicContent.atencao && topicContent.atencao.length) {
+      html += '<div class="content-block"><h3 class="sec-sub">Pontos de atenção</h3><div class="subtopic-list">' +
+        topicContent.atencao.map(function (a) {
+          return '<div class="subtopic-item warn"><span>' + a + "</span></div>";
+        }).join("") + "</div></div>";
+    }
+    if ((topic.subtopics || []).length) {
+      html += '<div class="content-block"><h3 class="sec-sub">Conteúdo programático</h3><div class="subtopic-list">' +
+        topic.subtopics.map(function (s) {
+          var done = !!rec.subtopics[s.id];
+          return '<label class="subtopic-item' + (done ? " done" : "") + '"><input type="checkbox"' + (done ? " checked" : "") +
+            ' data-sub="' + s.id + '"><span>' + s.name + "</span></label>";
+        }).join("") + "</div></div>";
+    }
+    if (topicContent && /venn|diagrama|visual/i.test((topicContent.resumo || "") + " " + (topicContent.conceitos || []).join(" "))) {
+      html += '<div class="content-block diagram-slot"><h3 class="sec-sub">Espaço para diagrama</h3>' +
+        '<p class="muted small">Representação visual deste assunto (ex.: diagrama de Venn) será adicionada em etapa posterior. Nenhum conteúdo novo foi inventado agora.</p></div>';
     }
     if (topicContent && topicContent.referencia) {
       html += '<div class="ref-line"><strong>Referência: </strong>' + topicContent.referencia + "</div>";
@@ -1330,65 +1391,29 @@
     if (topicContent && topicContent.atualizacao) {
       html += '<div class="notice">Conteúdo sujeito a atualização periódica. Revise com fontes oficiais antes da prova.</div>';
     }
-    html += "</div>";
+    html += "</section>";
 
-    html += '<div class="card"><h2>Pontos importantes</h2>';
-    if (topicContent && topicContent.pontos && topicContent.pontos.length) {
-      html += '<div class="subtopic-list">' + topicContent.pontos.map(function (p) {
-        return '<div class="subtopic-item"><span>' + p + "</span></div>";
-      }).join("") + "</div>";
-    } else {
-      html += '<p class="muted small">Sem tópicos destacados registrados.</p>';
-    }
-    if (topicContent && topicContent.atencao && topicContent.atencao.length) {
-      html += '<h3 class="sec-sub">Pontos de atenção</h3><div class="subtopic-list">' +
-        topicContent.atencao.map(function (a) {
-          return '<div class="subtopic-item warn"><span>' + a + "</span></div>";
-        }).join("") + "</div>";
-    }
-    if ((topic.subtopics || []).length) {
-      html += '<h3 class="sec-sub">Conteúdo programático</h3><div class="subtopic-list">' +
-        topic.subtopics.map(function (s) {
-          var done = !!rec.subtopics[s.id];
-          return '<label class="subtopic-item' + (done ? " done" : "") + '"><input type="checkbox"' + (done ? " checked" : "") +
-            ' data-sub="' + s.id + '"><span>' + s.name + "</span></label>";
-        }).join("") + "</div>";
-    }
-    html += "</div>";
-
-    html += '<div class="card"><h2>Videoaulas</h2>';
+    html += '<section class="card topic-panel' + (tab === "aula" ? " active" : "") + '" data-panel="aula">';
+    html += "<h2>Aula</h2>";
     if (mainVideos.length || extraVideos.length) {
-      mainVideos.forEach(function (v) {
-        html += '<a class="video-mini" href="' + v.url + '" target="_blank" rel="noopener">' +
-          "<strong>" + v.titulo + "</strong>" +
-          '<span class="video-meta">Principal' + (v.canal ? " - " + v.canal : "") + "</span></a>";
-      });
-      extraVideos.forEach(function (v) {
-        html += '<a class="video-mini" href="' + v.url + '" target="_blank" rel="noopener">' +
-          "<strong>" + v.titulo + "</strong>" +
-          '<span class="video-meta">Complementar' + (v.canal ? " - " + v.canal : "") + "</span></a>";
-      });
+      mainVideos.forEach(function (v) { html += topicVideoBlock(v); });
+      extraVideos.forEach(function (v) { html += topicVideoBlock(v); });
     } else if (missingVideo) {
       html += '<div class="notice">' + topicVideos[0].motivo + "</div>";
     } else {
       html += '<p class="muted small">Nenhuma videoaula selecionada para este assunto.</p>';
     }
-    html += "</div>";
+    if (videos.length) {
+      html += '<h3 class="sec-sub">Minhas videoaulas</h3><div class="topic-user-videos"></div>';
+    }
+    html += "</section>";
 
-    html += '<div class="card"><h2>Meu progresso neste assunto</h2>' +
-      '<div class="topic-sub">Marque como estudado para registrar seu avanço e atualizar o progresso do edital.</div>' +
-      '<div class="q-actions">' +
-      '<button class="btn primary" data-act="start">Começar estudo</button>' +
-      '<button class="btn' + (status === "estudado" ? " ghost" : "") + '" data-act="finish">' +
-      (status === "estudado" ? "Desmarcar como estudado" : "Marcar como estudado") + '</button>' +
-      '<button class="btn ghost" data-act="review">Revisar</button>' +
-      "</div></div>";
-
-    html += '<div class="card"><h2>Questões deste assunto</h2>';
+    html += '<section class="card topic-panel' + (tab === "questoes" ? " active" : "") + '" data-panel="questoes">';
+    html += "<h2>Questões</h2>";
     var bankStats = topicBankStats(topic.id);
     if (bankStats.total) {
-      html += '<p class="muted small">Banco: ' + bankStats.total + ' questões (' + bankStats.facil + ' fáceis, ' +
-        bankStats.media + ' médias, ' + bankStats.dificil + ' difíceis).</p>';
+      html += '<p class="muted small">Banco: ' + bankStats.total + " questões (" + bankStats.facil + " fáceis, " +
+        bankStats.media + " médias, " + bankStats.dificil + " difíceis).</p>";
     }
     if (questions.length) {
       questions.forEach(function (q) {
@@ -1400,25 +1425,36 @@
     } else {
       html += '<p class="muted small">Ainda não há questões para este assunto. O banco será ampliado nas próximas etapas.</p>';
     }
-    html += "</div>";
+    html += "</section>";
+
+    html += '<section class="card topic-panel' + (tab === "progresso" ? " active" : "") + '" data-panel="progresso">';
+    html += "<h2>Progresso</h2>";
+    html += '<div class="stat-row">' +
+      '<div class="stat-pill"><strong>' + progress + '%</strong><span>progresso</span></div>' +
+      '<div class="stat-pill"><strong>' + topicBankSize(topic.id) + '</strong><span>no banco</span></div>' +
+      '<div class="stat-pill"><strong>' + acc.total + '</strong><span>respondidas</span></div>' +
+      '<div class="stat-pill"><strong>' + acc.ok + '</strong><span>acertos</span></div>' +
+      '<div class="stat-pill"><strong>' + acc.wrong + '</strong><span>erros</span></div>' +
+      '<div class="stat-pill"><strong>' + acc.pct + '%</strong><span>percentual</span></div>' +
+      '<div class="stat-pill"><strong>' + (rec.reviewCount || 0) + '</strong><span>revisões</span></div>' +
+      "</div>";
+    html += '<div class="topic-sub">Última revisão: ' + formatDate(rec.lastReview) + " · último estudo: " + formatDate(rec.lastStudy) + "</div>";
+    html += '<div class="topic-sub">Marque como estudado para registrar seu avanço e atualizar o progresso do edital.</div>';
+    html += '<div class="q-actions">' +
+      '<button class="btn primary" data-act="start">Começar estudo</button>' +
+      '<button class="btn' + (status === "estudado" ? " ghost" : "") + '" data-act="finish">' +
+      (status === "estudado" ? "Desmarcar como estudado" : "Marcar como estudado") + "</button>" +
+      '<button class="btn ghost" data-act="review">Revisar</button>' +
+      "</div></section>";
+
+    html += "</div></div>";
     wrap.innerHTML = html;
 
-    if (videos.length) {
-      var videoCard = null;
-      var cards = wrap.querySelectorAll(".card");
-      for (var c = 0; c < cards.length; c++) {
-        var h2 = cards[c].querySelector("h2");
-        if (h2 && h2.textContent === "Videoaulas") { videoCard = cards[c]; break; }
-      }
-      if (videoCard) {
-        var mineHead = document.createElement("h3");
-        mineHead.className = "sec-sub";
-        mineHead.textContent = "Minhas videoaulas";
-        videoCard.appendChild(mineHead);
-        videos.forEach(function (v) {
-          videoCard.appendChild(createUserVideoAnchor(v, "video-mini"));
-        });
-      }
+    var userVideosWrap = wrap.querySelector(".topic-user-videos");
+    if (userVideosWrap && videos.length) {
+      videos.forEach(function (v) {
+        userVideosWrap.appendChild(createUserVideoAnchor(v, "video-mini"));
+      });
     }
 
     var checks = wrap.querySelectorAll("input[type=checkbox]");
@@ -1428,11 +1464,30 @@
         toggleSubtopic(topic.id, ev.currentTarget.getAttribute("data-sub"));
       };
     }
-    wrap.querySelector('[data-act="start"]').onclick = function () { startTopic(topic.id); };
-    wrap.querySelector('[data-act="finish"]').onclick = function () { toggleStudied(topic.id); };
-    wrap.querySelector('[data-act="review"]').onclick = function () { reviewTopic(topic.id); };
+    var startBtn = wrap.querySelector('[data-act="start"]');
+    if (startBtn) startBtn.onclick = function () { startTopic(topic.id); };
+    var finishBtn = wrap.querySelector('[data-act="finish"]');
+    if (finishBtn) finishBtn.onclick = function () { toggleStudied(topic.id); };
+    var reviewBtn = wrap.querySelector('[data-act="review"]');
+    if (reviewBtn) reviewBtn.onclick = function () { reviewTopic(topic.id); };
     var practice = wrap.querySelector('[data-act="practice"]');
     if (practice) practice.onclick = function () { practiceTopic(topic.id); };
+
+    var tabs = wrap.querySelectorAll(".topic-tab");
+    for (var t = 0; t < tabs.length; t++) {
+      tabs[t].onclick = function (ev) {
+        currentTopicTab = ev.currentTarget.getAttribute("data-tab");
+        var allTabs = wrap.querySelectorAll(".topic-tab");
+        var allPanels = wrap.querySelectorAll(".topic-panel");
+        var k;
+        for (k = 0; k < allTabs.length; k++) {
+          allTabs[k].classList.toggle("active", allTabs[k].getAttribute("data-tab") === currentTopicTab);
+        }
+        for (k = 0; k < allPanels.length; k++) {
+          allPanels[k].classList.toggle("active", allPanels[k].getAttribute("data-panel") === currentTopicTab);
+        }
+      };
+    }
   }
 
   function practiceTopic(topicId) {
