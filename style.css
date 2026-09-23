@@ -18,17 +18,50 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
   color: var(--text);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  min-height: 100%;
+  background-color: #071422;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #071422;
+  background-image:
+    radial-gradient(ellipse 46% 32% at 8% 14%, #122844 0 68%, transparent 69%),
+    radial-gradient(ellipse 38% 44% at 78% 8%, #0c1d33 0 66%, transparent 67%),
+    radial-gradient(ellipse 52% 28% at 52% 32%, #163352 0 60%, transparent 61%),
+    radial-gradient(ellipse 30% 40% at 92% 48%, #1a3d5c 0 64%, transparent 65%),
+    radial-gradient(ellipse 40% 26% at 18% 58%, #0e243c 0 68%, transparent 69%),
+    radial-gradient(ellipse 44% 34% at 64% 74%, #122844 0 62%, transparent 63%),
+    radial-gradient(ellipse 26% 36% at 4% 88%, #163352 0 66%, transparent 67%),
+    radial-gradient(ellipse 34% 22% at 38% 92%, #0c1d33 0 70%, transparent 71%),
+    radial-gradient(ellipse 22% 30% at 88% 86%, #0a1830 0 68%, transparent 69%),
+    radial-gradient(ellipse 20% 18% at 42% 48%, #1a3d5c 0 58%, transparent 59%),
+    radial-gradient(ellipse 28% 20% at 70% 40%, #0e243c 0 64%, transparent 65%),
+    radial-gradient(ellipse 18% 24% at 28% 24%, #0a1830 0 66%, transparent 67%),
+    repeating-linear-gradient(18deg, rgba(255, 255, 255, 0.015) 0 1px, transparent 1px 7px),
+    repeating-linear-gradient(108deg, rgba(0, 0, 0, 0.05) 0 1px, transparent 1px 9px);
+  background-size: 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px, 420px 420px;
+  background-repeat: repeat;
+}
+
 body {
   padding-bottom: 84px;
   max-width: 720px;
   margin: 0 auto;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 h1, h2 { margin: 0 0 10px; line-height: 1.25; }
@@ -48,9 +81,19 @@ p { margin: 0 0 10px; line-height: 1.5; }
   justify-content: space-between;
   gap: 10px;
   padding: calc(12px + env(safe-area-inset-top, 0px)) 16px 12px;
-  background: rgba(15, 23, 42, .96);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
+  background: rgba(7, 20, 34, .58);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border-bottom: 1px solid rgba(56, 90, 130, .28);
+}
+
+.topbar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+  background: var(--bg-soft);
 }
 
 .topbar-title { display: flex; flex-direction: column; min-width: 0; flex: 1; }
@@ -87,6 +130,7 @@ main { padding: 14px; }
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .28);
 }
 
 .hero {
@@ -405,9 +449,11 @@ select, input {
   right: 0;
   z-index: 30;
   display: flex;
-  background: rgba(15, 23, 42, .98);
-  backdrop-filter: blur(8px);
-  border-top: 1px solid var(--line);
+  background: rgba(7, 20, 34, .94);
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  border-top: 1px solid rgba(56, 90, 130, .38);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, .38);
   padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
   max-width: 720px;
   margin: 0 auto;
@@ -426,7 +472,7 @@ select, input {
   font-family: inherit;
 }
 .nav-btn span { display: block; }
-.nav-btn.active { color: var(--primary); background: var(--bg-soft); }
+.nav-btn.active { color: var(--primary); background: rgba(30, 41, 59, .92); }
 
 .empty { text-align: center; color: var(--muted); font-size: .85rem; padding: 24px 10px; }
 

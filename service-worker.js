@@ -1,4 +1,4 @@
-var CACHE_NAME = "dmae2026-v12";
+var CACHE_NAME = "dmae2026-v14";
 var APP_SHELL = [
   "./",
   "./index.html",
@@ -16,15 +16,24 @@ var APP_SHELL = [
   "./data/ai-config.js",
   "./data/videos.js",
   "./data/syllabus.js",
-  "./icons/icon.svg",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./icon/icon.png",
+  "./icon/icon-192.png",
+  "./icon/icon-512.png"
 ];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      return cache.addAll(APP_SHELL);
+      return Promise.all(APP_SHELL.map(function (url) {
+        return fetch(new Request(url, { cache: "reload" })).then(function (response) {
+          if (response && (response.status === 200 || response.type === "opaque")) {
+            return cache.put(url, response);
+          }
+          return null;
+        }).catch(function () {
+          return null;
+        });
+      }));
     }).then(function () {
       return self.skipWaiting();
     })
