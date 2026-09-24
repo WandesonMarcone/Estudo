@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">História de Minas Gerais</title>
+  <desc id="d">Ciclo do ouro no século XVIII, Inconfidência Mineira de 1789, capitais Ouro Preto e Belo Horizonte desde 1897, industrialização e siderurgia no século XX.</desc>
+  <defs>
+    <linearGradient id="g03-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#g03-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">História de Minas Gerais</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Ouro, Inconfidência e capitais</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Centro econômico da América portuguesa no séc. XVIII</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Ouro, pedras preciosas e patrimônio barroco</text>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <rect x="36" y="246" width="208" height="108" rx="6" fill="#0B1F38"/>
+    <text x="140" y="284" text-anchor="middle" fill="#C4A35A" font-size="12" font-weight="700">CICLO DO OURO</text>
+    <text x="140" y="312" text-anchor="middle" fill="#F8F4EA" font-size="14">séc. XVIII</text>
+    <path d="M244 300 H264" stroke="#C4A35A" stroke-width="1.4"/>
+    <polygon points="264,294 276,300 264,306" fill="#C4A35A"/>
+    <rect x="282" y="246" width="208" height="108" rx="6" fill="#0B1F38"/>
+    <text x="386" y="284" text-anchor="middle" fill="#C4A35A" font-size="12" font-weight="700">INCONFIDÊNCIA</text>
+    <text x="386" y="312" text-anchor="middle" fill="#F8F4EA" font-size="14">1789</text>
+    <path d="M490 300 H510" stroke="#C4A35A" stroke-width="1.4"/>
+    <polygon points="510,294 522,300 510,306" fill="#C4A35A"/>
+    <rect x="528" y="246" width="156" height="108" rx="6" fill="#C4A35A"/>
+    <text x="606" y="284" text-anchor="middle" fill="#0B1F38" font-size="12" font-weight="700">BH CAPITAL</text>
+    <text x="606" y="312" text-anchor="middle" fill="#0B1F38" font-size="14">1897</text>
+  </g>
+
+  <rect x="36" y="372" width="316" height="220" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="404" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Inconfidência Mineira</text>
+  <line x1="56" y1="414" x2="220" y2="414" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="56" y="448" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Contestação ao domínio colonial</text>
+  <text x="56" y="472" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">e à cobrança de tributos.</text>
+  <text x="56" y="504" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Influência iluminista.</text>
+  <text x="56" y="548" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Não foi independência efetivada.</text>
+
+  <rect x="368" y="372" width="316" height="220" rx="8" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="388" y="404" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Capitais</text>
+  <line x1="388" y1="414" x2="500" y2="414" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="388" y="448" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Vila Rica = Ouro Preto</text>
+  <text x="388" y="472" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">(nome colonial).</text>
+  <text x="388" y="504" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Belo Horizonte desde 1897.</text>
+  <text x="388" y="548" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Troca de capital em 1897.</text>
+
+  <rect x="36" y="610" width="648" height="120" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="646" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Século XX: indústria e siderurgia</text>
+  <text x="56" y="676" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">O ciclo do ouro gerou cidades históricas e controle fiscal intenso.</text>
+  <text x="56" y="704" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Barroco: estilo artístico do patrimônio mineiro.</text>
+
+  <rect x="36" y="748" width="648" height="134" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="748" width="648" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="776" width="648" height="12" fill="#0B1F38"/>
+  <text x="56" y="776" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Não confundir revoltas</text>
+  <text x="56" y="820" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Inconfidência Mineira (1789) ≠ outras revoltas coloniais.</text>
+  <text x="56" y="852" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Foi contestação, não independência consumada.</text>
+  <rect x="36" y="900" width="648" height="308" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="900" width="8" height="308" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 924)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="940" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="980" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Inconfidência Mineira: contestação, não independência efetivada.</text>
+  <text x="64" y="1012" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Vila Rica é o nome colonial de Ouro Preto.</text>
+  <text x="64" y="1044" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">A troca de capital para BH ocorreu em 1897.</text>
+  <line x1="64" y1="1076" x2="652" y2="1076" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1108" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Ouro no séc. XVIII → 1789 → BH em 1897.</text>
+  <text x="64" y="1180" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#g03-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>
