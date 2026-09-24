@@ -1342,22 +1342,167 @@
   }
 
   function topicOfficialMaterials(topicId) {
+    var id = normalizeTopicId(topicId);
     return (window.DATA_MATERIAIS || []).filter(function (item) {
-      return item && item.topicId === topicId && item.tipo === "oficial";
+      return item && normalizeTopicId(item.topicId) === id && item.tipo === "oficial";
     });
   }
 
+  var VISUAL_SVG_FILES = [
+    "esp-cadastro-classificacao-economias.svg",
+    "esp-calculo-consumo-conversao-volume.svg",
+    "esp-estrutura-tarifaria.svg",
+    "esp-fraudes-adulteracoes.svg",
+    "esp-funcionamento-leitura-hidrometros.svg",
+    "esp-hidrometro-classe-i-padrao-instalacao.svg",
+    "esp-informacoes-oficiais-dmae.svg",
+    "esp-informatica-basica.svg",
+    "esp-lacres-padrao-instalacao.svg",
+    "esp-lei-11445-2007.svg",
+    "esp-lei-14026-2020.svg",
+    "esp-lei-9605-1998.svg",
+    "esp-leitura-emissao-entrega-contas.svg",
+    "esp-ligacoes-clandestinas.svg",
+    "esp-manual-funasa.svg",
+    "esp-nr6-epi.svg",
+    "esp-portaria-2175-2022-nr6.svg",
+    "esp-portaria-888-2021.svg",
+    "esp-registro-consumo.svg",
+    "mat-01.svg",
+    "mat-02.svg",
+    "mat-03.svg",
+    "mat-04.svg",
+    "mat-05.svg",
+    "mat-06.svg",
+    "mat-07.svg",
+    "mat-08.svg",
+    "mat-09.svg",
+    "mat-10.svg",
+    "mat-11.svg",
+    "mat-12.svg",
+    "mat-13.svg",
+    "mat-14.svg",
+    "mat-15.svg",
+    "mat-16.svg",
+    "mat-17.svg",
+    "mat-conjuntos.svg",
+    "port-01.svg",
+    "port-02.svg",
+    "port-03.svg",
+    "port-04.svg",
+    "port-05.svg",
+    "port-06.svg",
+    "port-07.svg",
+    "port-08.svg",
+    "port-09.svg",
+    "port-10.svg",
+    "port-11.svg"
+  ];
+
+  function visualPrefixRelated(filePrefix, topicPrefix) {
+    if (!filePrefix || !topicPrefix) return false;
+    return filePrefix === topicPrefix ||
+      filePrefix.indexOf(topicPrefix) === 0 ||
+      topicPrefix.indexOf(filePrefix) === 0;
+  }
+
+  function visualTokensFit(stem, topicId) {
+    var fileTokens = String(stem || "").split("-");
+    var topicTokens = String(topicId || "").split("-");
+    if (fileTokens.length < 2) return false;
+    for (var i = 0; i < fileTokens.length; i++) {
+      if (topicTokens.indexOf(fileTokens[i]) < 0) return false;
+    }
+    return true;
+  }
+
+  function resolveVisualSvgForTopic(topicId) {
+    var id = normalizeTopicId(topicId);
+    if (!id) return "";
+    var files = VISUAL_SVG_FILES;
+    var entry = getTopicById(id);
+    var topicPrefix = id.split("-")[0];
+    if (entry) {
+      var topics = entry.subject.topics || [];
+      var idx = -1;
+      for (var i = 0; i < topics.length; i++) {
+        if (normalizeTopicId(topics[i].id) === id) {
+          idx = i;
+          break;
+        }
+      }
+      if (idx >= 0) {
+        var num = idx + 1;
+        for (var f = 0; f < files.length; f++) {
+          var numbered = /^([a-z]+)-(\d+)\.svg$/.exec(files[f]);
+          if (!numbered) continue;
+          if (parseInt(numbered[2], 10) !== num) continue;
+          if (visualPrefixRelated(numbered[1], topicPrefix)) return "visuais/" + files[f];
+        }
+      }
+    }
+    if (files.indexOf(id + ".svg") >= 0) return "visuais/" + id + ".svg";
+    var best = "";
+    var bestLen = 0;
+    for (var j = 0; j < files.length; j++) {
+      var name = files[j];
+      if (name.slice(-4) !== ".svg") continue;
+      var stem = name.slice(0, -4);
+      if (/^[a-z]+-\d+$/.test(stem)) continue;
+      if (stem.split("-")[0] !== topicPrefix) continue;
+      if (!visualTokensFit(stem, id)) continue;
+      if (stem.length > bestLen) {
+        best = name;
+        bestLen = stem.length;
+      }
+    }
+    return best ? "visuais/" + best : "";
+  }
+
+  function registeredVisualForTopic(topicId) {
+    var id = normalizeTopicId(topicId);
+    var found = null;
+    function take(item) {
+      if (!item || normalizeTopicId(item.topicId) !== id) return;
+      if (item.tipo && item.tipo !== "visual") return;
+      if (!found) found = item;
+    }
+    (window.DATA_RESUMOS_VISUAIS || []).forEach(take);
+    (window.DATA_MATERIAIS || []).forEach(function (item) {
+      if (item && item.tipo === "visual") take(item);
+    });
+    return found;
+  }
+
   function topicVisualSummaries(topicId) {
+    var id = normalizeTopicId(topicId);
+    var entry = getTopicById(id);
+    var resolved = resolveVisualSvgForTopic(id);
+    var meta = registeredVisualForTopic(id);
     var seen = {};
     var list = [];
     function add(item) {
-      if (!item || item.topicId !== topicId) return;
+      if (!item) return;
+      if (item.topicId && normalizeTopicId(item.topicId) !== id) return;
       if (item.tipo && item.tipo !== "visual") return;
-      var key = (item.imagem || "") + "|" + (item.titulo || "");
-      if (seen[key]) return;
-      seen[key] = true;
+      var img = item.imagem || "";
+      if (!img || seen[img]) return;
+      seen[img] = true;
       list.push(item);
     }
+    if (resolved) {
+      add({
+        topicId: id,
+        tipo: "visual",
+        titulo: (meta && meta.titulo) || (entry && entry.topic.name) || "Resumo visual",
+        subtitulo: (meta && meta.subtitulo) || "",
+        descricao: (meta && meta.descricao) || "",
+        imagem: resolved,
+        origem: (meta && meta.origem) || ""
+      });
+      return list;
+    }
+    if (meta) add(meta);
     (window.DATA_RESUMOS_VISUAIS || []).forEach(add);
     (window.DATA_MATERIAIS || []).forEach(function (item) {
       if (item && item.tipo === "visual") add(item);
