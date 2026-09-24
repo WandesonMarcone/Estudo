@@ -1291,6 +1291,36 @@
     return youtubeEmbedIdFromUrl(v.url);
   }
 
+  function normalizeTopicId(id) {
+    return id == null ? "" : String(id).trim();
+  }
+
+  function officialVideosForTopic(topicId) {
+    var id = normalizeTopicId(topicId);
+    if (!id) return [];
+    return (window.DATA_VIDEOAULAS || []).filter(function (v) {
+      return v && normalizeTopicId(v.topicId) === id;
+    });
+  }
+
+  function officialMainVideos(list) {
+    return (list || []).filter(function (v) {
+      return v && !v.semVideo && v.tipo !== "complementar";
+    });
+  }
+
+  function officialExtraVideos(list) {
+    return (list || []).filter(function (v) {
+      return v && !v.semVideo && v.tipo === "complementar";
+    });
+  }
+
+  function officialPlayableVideos(list) {
+    return (list || []).filter(function (v) {
+      return v && !v.semVideo && resolveOfficialVideoId(v);
+    });
+  }
+
   function topicVideoBlock(v) {
     var embedId = resolveOfficialVideoId(v);
     var html = '<article class="topic-lesson">';
@@ -1497,11 +1527,12 @@
     });
 
     var importance = topic.importance || 0;
-    var topicVideos = (window.DATA_VIDEOAULAS || []).filter(function (v) {
-      return v.topicId === topic.id;
-    });
-    var mainVideos = topicVideos.filter(function (v) { return !v.semVideo && v.tipo === "principal"; });
-    var extraVideos = topicVideos.filter(function (v) { return !v.semVideo && v.tipo === "complementar"; });
+    var topicVideos = officialVideosForTopic(topic.id);
+    var mainVideos = officialMainVideos(topicVideos);
+    var extraVideos = officialExtraVideos(topicVideos);
+    if (!mainVideos.length && !extraVideos.length) {
+      mainVideos = officialPlayableVideos(topicVideos);
+    }
     var missingVideo = topicVideos.length > 0 && topicVideos.every(function (v) { return v.semVideo; });
     var topicContent = (window.DATA_CONTENT || {})[topic.id];
     var tab = currentTopicTab || "conteudo";
@@ -2457,7 +2488,6 @@
     var wrap = $("videos-list");
     wrap.innerHTML = "";
     var bySubject = videoTopicsBySubject();
-    var officialAll = window.DATA_VIDEOAULAS || [];
     SUBJECT_ORDER.forEach(function (key) {
       var topics = bySubject[key] || [];
       if (!topics.length) return;
@@ -2471,11 +2501,12 @@
       var topicsWrap = document.createElement("div");
       topicsWrap.className = "video-topics";
       topics.forEach(function (topic) {
-        var official = officialAll.filter(function (v) {
-          return topic.id && v.topicId === topic.id;
-        });
-        var mainOfficial = official.filter(function (v) { return !v.semVideo && v.tipo === "principal"; });
-        var extraOfficial = official.filter(function (v) { return !v.semVideo && v.tipo === "complementar"; });
+        var official = officialVideosForTopic(topic.id);
+        var mainOfficial = officialMainVideos(official);
+        var extraOfficial = officialExtraVideos(official);
+        if (!mainOfficial.length && !extraOfficial.length) {
+          mainOfficial = officialPlayableVideos(official);
+        }
         var missingOfficial = official.length > 0 && official.every(function (v) { return v.semVideo; });
         var userLinks = state.videos.filter(function (v) {
           return v.subject === key && (v.topic === topic.name || (topic.id && v.topicId === topic.id));
