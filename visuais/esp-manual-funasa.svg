@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Manual de Saneamento da FUNASA</title>
+  <desc id="d">Obra de referência técnica sobre água, esgoto, resíduos e drenagem. FUNASA atua em saneamento e saúde pública. O manual não é norma jurídica impositiva.</desc>
+  <defs>
+    <linearGradient id="h20-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#h20-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Manual FUNASA</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Referência técnica — sem força de lei</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <g transform="translate(56 176)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <rect x="0" y="0" width="14" height="16" rx="1"/>
+    <path d="M3 5 h8 M3 9 h6"/>
+  </g>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">FUNASA: Fundação Nacional de Saúde</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Vinculada ao Ministério da Saúde</text>
+
+  <rect x="36" y="246" width="648" height="280" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Mapa dos conceitos</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+  <circle cx="360" cy="390" r="52" fill="#0B1F38"/>
+  <text x="360" y="386" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">MANUAL</text>
+  <text x="360" y="404" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">técnico</text>
+  <rect x="56" y="308" width="168" height="72" rx="6" fill="#0B1F38"/>
+  <text x="140" y="340" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ÁGUA</text>
+  <text x="140" y="360" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">abastecimento</text>
+  <rect x="496" y="308" width="168" height="72" rx="6" fill="#0B1F38"/>
+  <text x="580" y="340" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ESGOTO</text>
+  <text x="580" y="360" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">esgotamento</text>
+  <rect x="56" y="424" width="168" height="72" rx="6" fill="#0B1F38"/>
+  <text x="140" y="456" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">RESÍDUOS</text>
+  <text x="140" y="476" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">sólidos</text>
+  <rect x="496" y="424" width="168" height="72" rx="6" fill="#0B1F38"/>
+  <text x="580" y="456" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">DRENAGEM</text>
+  <text x="580" y="476" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">águas pluviais</text>
+  <g fill="none" stroke="#C4A35A" stroke-width="1.35">
+    <path d="M224 344 H308"/>
+    <path d="M412 344 H496"/>
+    <path d="M224 460 H308"/>
+    <path d="M412 460 H496"/>
+  </g>
+
+  <rect x="36" y="544" width="316" height="148" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="544" width="316" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="36" y="568" width="316" height="12" fill="#0B1F38"/>
+  <text x="56" y="568" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">O que é</text>
+  <text x="56" y="608" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Obra de referência técnica.</text>
+  <text x="56" y="632" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Apoio a projetos, operação</text>
+  <text x="56" y="656" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">e ações de saúde.</text>
+  <text x="56" y="676" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Abrange os quatro componentes.</text>
+
+  <rect x="368" y="544" width="316" height="148" rx="6" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="368" y="544" width="316" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="368" y="568" width="316" height="12" fill="#0B1F38"/>
+  <text x="388" y="568" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">O que não é</text>
+  <text x="388" y="608" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não é norma jurídica.</text>
+  <text x="388" y="632" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não tem força de lei.</text>
+  <text x="388" y="656" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não é impositiva.</text>
+  <text x="388" y="676" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Manual técnico = orientação.</text>
+
+  <rect x="36" y="710" width="648" height="186" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="740" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">FUNASA no saneamento</text>
+  <line x1="56" y1="750" x2="176" y2="750" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="56" y="782" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Fundação pública vinculada ao Ministério da Saúde.</text>
+  <text x="56" y="810" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Atuação histórica em saneamento e saúde pública.</text>
+  <text x="56" y="838" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Abastecimento de água: componente ligado ao fornecimento.</text>
+  <text x="56" y="870" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">FUNASA se vincula à saúde, com atuação em saneamento.</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Referência técnica sobre os componentes do saneamento.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Manual técnico não tem força de lei.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">FUNASA: saneamento e saúde pública.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não é norma jurídica impositiva. Abrange os quatro componentes.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#h20-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

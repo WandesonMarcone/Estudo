@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Leitura, emissão e entrega de contas</title>
+  <desc id="d">A fatura traz identificação, leituras, consumo, valor e vencimento. Entrega no meio informado. A conta não substitui a leitura.</desc>
+  <defs>
+    <linearGradient id="h8-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#h8-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Leitura, emissão e entrega</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">A conta documenta; não substitui a leitura</text>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <rect x="36" y="156" width="150" height="72" rx="6" fill="#0B1F38"/>
+    <g transform="translate(52 178)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+      <circle cx="8" cy="8" r="7"/>
+      <path d="M8 5 v6 M5 8 h6"/>
+    </g>
+    <text x="78" y="186" fill="#F8F4EA" font-size="13" font-weight="700">1. LEITURA</text>
+    <text x="78" y="206" fill="#C4A35A" font-size="11">no hidrômetro</text>
+    <path d="M186 192 H210" stroke="#C4A35A" stroke-width="1.4"/>
+    <polygon points="210,186 222,192 210,198" fill="#C4A35A"/>
+
+    <rect x="228" y="156" width="150" height="72" rx="6" fill="#0B1F38"/>
+    <g transform="translate(244 178)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+      <rect x="0" y="0" width="16" height="14" rx="1"/>
+      <path d="M3 5 h10 M3 9 h7"/>
+    </g>
+    <text x="270" y="186" fill="#F8F4EA" font-size="13" font-weight="700">2. EMISSÃO</text>
+    <text x="270" y="206" fill="#C4A35A" font-size="11">fatura de cobrança</text>
+    <path d="M378 192 H402" stroke="#C4A35A" stroke-width="1.4"/>
+    <polygon points="402,186 414,192 402,198" fill="#C4A35A"/>
+
+    <rect x="420" y="156" width="150" height="72" rx="6" fill="#0B1F38"/>
+    <g transform="translate(436 178)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+      <path d="M2 2 h12 v12 h-12 Z"/>
+      <path d="M2 2 L8 8 L14 2"/>
+    </g>
+    <text x="462" y="186" fill="#F8F4EA" font-size="13" font-weight="700">3. ENTREGA</text>
+    <text x="462" y="206" fill="#C4A35A" font-size="11">meio do cadastro</text>
+    <path d="M570 192 H594" stroke="#C4A35A" stroke-width="1.4"/>
+    <polygon points="594,186 606,192 594,198" fill="#C4A35A"/>
+
+    <rect x="612" y="156" width="72" height="72" rx="6" fill="#C4A35A"/>
+    <text x="648" y="186" text-anchor="middle" fill="#0B1F38" font-size="12" font-weight="700">4.</text>
+    <text x="648" y="206" text-anchor="middle" fill="#0B1F38" font-size="11" font-weight="700">conferir</text>
+  </g>
+
+  <rect x="36" y="246" width="648" height="360" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Elementos da fatura</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect x="88" y="306" width="544" height="236" rx="6" fill="#F7F3E8" stroke="#0B1F38" stroke-width="1.6"/>
+  <rect x="88" y="306" width="544" height="36" fill="#0B1F38"/>
+  <text x="360" y="330" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">CONTA DE ÁGUA — esquema didático</text>
+
+  <rect x="108" y="356" width="240" height="44" rx="4" fill="#0B1F38"/>
+  <text x="228" y="374" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700">USUÁRIO</text>
+  <text x="228" y="390" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">identificação</text>
+  <rect x="364" y="356" width="244" height="44" rx="4" fill="#0B1F38"/>
+  <text x="486" y="374" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700">LIGAÇÃO</text>
+  <text x="486" y="390" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">identificação</text>
+
+  <rect x="108" y="410" width="152" height="44" rx="4" fill="#EDE8DB" stroke="#C4A35A" stroke-width="1"/>
+  <text x="184" y="428" text-anchor="middle" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">PERÍODO</text>
+  <text x="184" y="444" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">do faturamento</text>
+  <rect x="272" y="410" width="152" height="44" rx="4" fill="#EDE8DB" stroke="#C4A35A" stroke-width="1"/>
+  <text x="348" y="428" text-anchor="middle" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">ANTERIOR</text>
+  <text x="348" y="444" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">leitura</text>
+  <rect x="436" y="410" width="172" height="44" rx="4" fill="#EDE8DB" stroke="#C4A35A" stroke-width="1"/>
+  <text x="522" y="428" text-anchor="middle" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">ATUAL</text>
+  <text x="522" y="444" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">leitura</text>
+
+  <rect x="108" y="464" width="152" height="54" rx="4" fill="#0B1F38"/>
+  <text x="184" y="486" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700">CONSUMO</text>
+  <text x="184" y="504" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">m³ do período</text>
+  <rect x="272" y="464" width="152" height="54" rx="4" fill="#0B1F38"/>
+  <text x="348" y="486" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700">VALOR</text>
+  <text x="348" y="504" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">a pagar</text>
+  <rect x="436" y="464" width="172" height="54" rx="4" fill="#C4A35A"/>
+  <text x="522" y="486" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11" font-weight="700">VENCIMENTO</text>
+  <text x="522" y="504" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">limite sem encargos</text>
+
+  <text x="360" y="566" text-anchor="middle" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Transparência: permite conferência e contestação.</text>
+  <text x="360" y="588" text-anchor="middle" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Ausência de elementos obrigatórios prejudica a conferência.</text>
+
+  <rect x="36" y="624" width="316" height="148" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="624" width="316" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="36" y="648" width="316" height="12" fill="#0B1F38"/>
+  <g transform="translate(54 636)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+    <path d="M2 2 h12 v12 h-12 Z"/>
+    <path d="M2 2 L8 8 L14 2"/>
+  </g>
+  <text x="80" y="648" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Entrega</text>
+  <text x="56" y="692" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">No endereço ou meio informado.</text>
+  <text x="56" y="716" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Físico ou digital, conforme o cadastro.</text>
+  <text x="56" y="748" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Para conhecer e questionar o valor.</text>
+
+  <rect x="368" y="624" width="316" height="148" rx="6" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="368" y="624" width="316" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="368" y="648" width="316" height="12" fill="#0B1F38"/>
+  <g transform="translate(386 636)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="414" y="648" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Conta × leitura</text>
+  <text x="388" y="692" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">A fatura é baseada na leitura.</text>
+  <text x="388" y="716" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não é a origem da medição.</text>
+  <text x="388" y="748" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">A conta não substitui a leitura.</text>
+
+  <rect x="36" y="790" width="648" height="108" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="790" width="648" height="32" rx="6" fill="#0B1F38"/>
+  <rect x="36" y="810" width="648" height="12" fill="#0B1F38"/>
+  <text x="56" y="812" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Contestação</text>
+  <text x="56" y="848" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Pedido de revisão da cobrança pelo usuário.</text>
+  <text x="56" y="872" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Vencimento: data limite para pagamento sem encargos.</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Fatura: identificação, leituras, consumo, valor e vencimento.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Entrega no endereço ou meio informado pelo usuário.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">A conta não substitui a leitura do hidrômetro.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">A fatura é documento de cobrança baseado na leitura.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#h8-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

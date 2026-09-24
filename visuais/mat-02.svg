@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Números</title>
+  <desc id="d">Conjuntos numéricos: naturais, inteiros, racionais, irracionais e reais. ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. MMC, MDC e propriedades das operações.</desc>
+  <defs>
+    <linearGradient id="m02-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#m02-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Números</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">ℕ, ℤ, ℚ, I e ℝ</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Naturais, inteiros, racionais, irracionais e reais</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ</text>
+
+  <rect x="36" y="246" width="648" height="260" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Inclusão dos conjuntos</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="96" y="304" width="528" height="176" rx="8" fill="#0B1F38"/>
+  <text x="116" y="328" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">ℝ reais</text>
+  <rect x="128" y="340" width="464" height="124" rx="6" fill="#173B5F"/>
+  <text x="148" y="364" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">ℚ racionais</text>
+  <text x="420" y="364" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">I irracionais (em ℝ)</text>
+  <rect x="160" y="376" width="300" height="72" rx="6" fill="#C4A35A"/>
+  <text x="176" y="404" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">ℤ inteiros</text>
+  <rect x="192" y="412" width="180" height="28" rx="4" fill="#0B1F38"/>
+  <text x="208" y="432" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ℕ naturais</text>
+  <text x="56" y="504" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Todo natural é inteiro e todo inteiro é racional, mas não o contrário.</text>
+
+  <rect x="36" y="524" width="316" height="168" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="556" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Racional</text>
+  <text x="56" y="584" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Pode ser escrito como fração a/b.</text>
+  <text x="56" y="612" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Frações, decimais e porcentagem.</text>
+  <text x="56" y="648" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Operações com frações</text>
+  <text x="56" y="672" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">e números decimais.</text>
+
+  <rect x="368" y="524" width="316" height="168" rx="8" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="388" y="556" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Irracional</text>
+  <text x="388" y="584" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Decimal infinito e não periódico.</text>
+  <text x="388" y="612" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não pode ser fração exata.</text>
+  <text x="388" y="648" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Raiz de número não</text>
+  <text x="388" y="672" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">quadrado perfeito é irracional.</text>
+
+  <rect x="36" y="710" width="648" height="186" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="710" width="648" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="738" width="648" height="12" fill="#0B1F38"/>
+  <text x="56" y="738" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Operações e divisibilidade</text>
+  <text x="56" y="782" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Propriedades: comutativa, associativa, distributiva.</text>
+  <text x="56" y="810" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Números primos, MMC e MDC.</text>
+  <text x="56" y="838" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">MMC: menor múltiplo comum entre dois ou mais números.</text>
+  <text x="56" y="870" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Sinais nas operações com números negativos são fonte comum de erro.</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Relação de inclusão: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Irracionais não podem ser escritos como fração exata.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Raiz de número não quadrado perfeito é irracional.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Todo natural é inteiro e todo inteiro é racional, mas não o contrário.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#m02-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

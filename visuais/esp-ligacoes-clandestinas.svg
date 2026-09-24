@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Ligações clandestinas</title>
+  <desc id="d">Clandestina: derivação sem autorização ou contrato, normalmente sem hidrômetro. Agente registra e comunica o setor competente.</desc>
+  <defs>
+    <linearGradient id="h9-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+    <linearGradient id="h9-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9D3C6"/>
+      <stop offset="0.5" stop-color="#A8A193"/>
+      <stop offset="1" stop-color="#6F6A5E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#h9-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Ligações clandestinas</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Sem autorização, contrato ou medição</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <g transform="translate(56 176)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Derivação da rede sem autorização ou contrato</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Normalmente sem hidrômetro</text>
+
+  <rect x="36" y="246" width="648" height="268" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Regular × clandestina</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect x="56" y="304" width="292" height="148" rx="6" fill="#0B1F38"/>
+  <text x="202" y="332" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">LIGAÇÃO REGULAR</text>
+  <rect x="76" y="348" width="48" height="28" rx="3" fill="#173B5F"/>
+  <text x="100" y="366" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700">REDE</text>
+  <rect x="124" y="358" width="28" height="8" fill="#8A8374"/>
+  <rect x="152" y="344" width="72" height="36" rx="10" fill="url(#h9-metal)" stroke="#C4A35A" stroke-width="1.4"/>
+  <circle cx="188" cy="362" r="10" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="188" y="366" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="7" font-weight="700">m³</text>
+  <rect x="224" y="358" width="28" height="8" fill="#8A8374"/>
+  <rect x="252" y="348" width="76" height="28" rx="3" fill="#173B5F"/>
+  <text x="290" y="366" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700">USUÁRIO</text>
+  <text x="202" y="428" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">contrato + medição</text>
+
+  <rect x="372" y="304" width="288" height="148" rx="6" fill="#0B1F38" stroke="#C4A35A" stroke-width="1.6"/>
+  <text x="516" y="332" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">LIGAÇÃO CLANDESTINA</text>
+  <rect x="392" y="348" width="48" height="28" rx="3" fill="#173B5F"/>
+  <text x="416" y="366" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700">REDE</text>
+  <path d="M440 362 H500" stroke="#C4A35A" stroke-width="3" stroke-dasharray="6 4"/>
+  <polygon points="500,356 514,362 500,368" fill="#C4A35A"/>
+  <rect x="520" y="348" width="116" height="28" rx="3" fill="#173B5F"/>
+  <text x="578" y="366" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="10" font-weight="700">SEM MEDIDOR</text>
+  <text x="516" y="428" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">sem anuência + sem medição</text>
+
+  <g fill="none" stroke="#C4A35A" stroke-width="1.35">
+    <circle cx="202" cy="452" r="4"/>
+    <path d="M202 452 V468"/>
+    <circle cx="516" cy="452" r="4"/>
+    <path d="M516 452 V468"/>
+  </g>
+  <text x="56" y="490" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Diferença central: existir ou não autorização/contrato e medição.</text>
+
+  <rect x="36" y="532" width="648" height="148" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="564" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Fiscalização</text>
+  <line x1="56" y1="574" x2="176" y2="574" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="56" y="604" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Identifica irregularidades e clandestinidades.</text>
+  <text x="56" y="628" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Coíbe fraudes e mantém cadastro e cobrança regulares.</text>
+  <text x="56" y="656" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Clandestina difere de ligação irregular regularizável.</text>
+
+  <rect x="36" y="698" width="200" height="196" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="698" width="200" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="36" y="722" width="200" height="12" fill="#0B1F38"/>
+  <g transform="translate(52 710)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+    <rect width="14" height="14" rx="2"/>
+    <path d="M4 7 h6"/>
+  </g>
+  <text x="76" y="722" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">1. Registrar</text>
+  <text x="52" y="760" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Documentar os fatos.</text>
+  <text x="52" y="780" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Instruir o processo.</text>
+  <text x="52" y="816" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Toda constatação</text>
+  <text x="52" y="836" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">deve ser documentada.</text>
+  <text x="52" y="868" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Sem iniciativas pessoais.</text>
+
+  <rect x="252" y="698" width="200" height="196" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="252" y="698" width="200" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="252" y="722" width="200" height="12" fill="#0B1F38"/>
+  <g transform="translate(268 710)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+    <path d="M0 7 h14"/>
+    <polygon points="14,4 20,7 14,10" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="296" y="722" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">2. Encaminhar</text>
+  <text x="268" y="760" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Setor competente.</text>
+  <text x="268" y="780" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Rito da autarquia.</text>
+  <text x="268" y="816" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Medidas previstas</text>
+  <text x="268" y="836" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">na norma.</text>
+  <text x="268" y="868" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Regularização: adequar a ligação.</text>
+
+  <rect x="468" y="698" width="216" height="196" rx="6" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="468" y="698" width="216" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="468" y="722" width="216" height="12" fill="#0B1F38"/>
+  <g transform="translate(484 708)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <circle cx="8" cy="8" r="7"/>
+    <path d="M5 5 L11 11 M11 5 L5 11"/>
+  </g>
+  <text x="508" y="722" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">3. Vedado</text>
+  <text x="484" y="760" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Receber valores</text>
+  <text x="484" y="780" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">em campo.</text>
+  <text x="484" y="816" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Não negociar</text>
+  <text x="484" y="836" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">informalmente.</text>
+  <text x="484" y="868" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Sem competência para cobrar.</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Clandestina: sem autorização/contrato e sem medição.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Agente: registrar fatos e comunicar o setor competente.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Proibido receber valores em campo ou negociar.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Fiscalização coíbe fraudes e mantém cadastro e cobrança.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#h9-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

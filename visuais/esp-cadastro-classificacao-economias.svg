@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Cadastro e classificação de economias</title>
+  <desc id="d">Economia é unidade autônoma de consumo. Classificação define a tarifa. Um terreno pode ter várias economias. Uso real orienta a classificação.</desc>
+  <defs>
+    <linearGradient id="h11-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#h11-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Cadastro e economias</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Unidade autônoma e classificação</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <g transform="translate(56 178)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <rect x="0" y="0" width="16" height="16" rx="2"/>
+    <path d="M4 8 h8 M8 4 v8"/>
+  </g>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Economia = unidade autônoma de consumo</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Cadastrada e faturada separadamente</text>
+
+  <rect x="36" y="246" width="648" height="280" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Um terreno, várias economias</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect x="56" y="304" width="608" height="160" rx="6" fill="#F7F3E8" stroke="#8A8374" stroke-width="1.4"/>
+  <text x="72" y="326" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">TERRENO / IMÓVEL</text>
+  <rect x="72" y="340" width="132" height="104" rx="6" fill="#0B1F38"/>
+  <text x="138" y="380" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ECONOMIA 1</text>
+  <text x="138" y="404" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">unidade autônoma</text>
+  <rect x="216" y="340" width="132" height="104" rx="6" fill="#0B1F38"/>
+  <text x="282" y="380" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ECONOMIA 2</text>
+  <text x="282" y="404" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">unidade autônoma</text>
+  <rect x="360" y="340" width="132" height="104" rx="6" fill="#0B1F38"/>
+  <text x="426" y="380" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ECONOMIA 3</text>
+  <text x="426" y="404" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">unidade autônoma</text>
+  <rect x="504" y="340" width="140" height="104" rx="6" fill="#C4A35A"/>
+  <text x="574" y="380" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">ECONOMIA n</text>
+  <text x="574" y="404" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">cada uma faturada</text>
+  <text x="360" y="496" text-anchor="middle" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Economia não se confunde com matrícula do imóvel.</text>
+
+  <rect x="36" y="544" width="648" height="148" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="576" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Classificação (categoria tarifária)</text>
+  <line x1="56" y1="586" x2="176" y2="586" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="56" y="600" width="140" height="52" rx="6" fill="#0B1F38"/>
+  <text x="126" y="632" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Residencial</text>
+  <rect x="208" y="600" width="140" height="52" rx="6" fill="#0B1F38"/>
+  <text x="278" y="632" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Comercial</text>
+  <rect x="360" y="600" width="140" height="52" rx="6" fill="#0B1F38"/>
+  <text x="430" y="632" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Industrial</text>
+  <rect x="512" y="600" width="148" height="52" rx="6" fill="#0B1F38"/>
+  <text x="586" y="632" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Pública etc.</text>
+  <text x="56" y="674" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Classificação define o tratamento tarifário.</text>
+
+  <rect x="36" y="710" width="200" height="186" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="710" width="200" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="36" y="734" width="200" height="12" fill="#0B1F38"/>
+  <text x="56" y="734" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Economia</text>
+  <text x="52" y="774" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Unidade autônoma</text>
+  <text x="52" y="794" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">passível de consumo</text>
+  <text x="52" y="814" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">de água.</text>
+  <text x="52" y="850" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Não é a matrícula.</text>
+  <text x="52" y="872" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Faturada à parte.</text>
+
+  <rect x="252" y="710" width="200" height="186" rx="6" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="252" y="710" width="200" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="252" y="734" width="200" height="12" fill="#0B1F38"/>
+  <text x="272" y="734" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Usuário</text>
+  <text x="268" y="774" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Titular do imóvel</text>
+  <text x="268" y="794" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">ou responsável</text>
+  <text x="268" y="814" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">pela ligação.</text>
+  <text x="268" y="850" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Cadastro atualizado.</text>
+  <text x="268" y="872" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Evita cobrança indevida.</text>
+
+  <rect x="468" y="710" width="216" height="186" rx="6" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="468" y="710" width="216" height="36" rx="6" fill="#0B1F38"/>
+  <rect x="468" y="734" width="216" height="12" fill="#0B1F38"/>
+  <text x="488" y="734" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Uso real</text>
+  <text x="484" y="774" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Orienta a classificação.</text>
+  <text x="484" y="794" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Não só a declaração.</text>
+  <text x="484" y="830" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Mudança de uso ou</text>
+  <text x="484" y="850" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">nova unidade:</text>
+  <text x="484" y="872" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">atualizar o cadastro.</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Economia = unidade autônoma de consumo.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Um terreno pode ter várias economias.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Uso real orienta a classificação, não só a declaração.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Cadastro desatualizado gera cobrança indevida e retrabalho.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#h11-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

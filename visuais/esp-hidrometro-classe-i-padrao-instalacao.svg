@@ -28,14 +28,15 @@
   <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
   <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
   <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
-  <g transform="translate(360 28)" fill="none" stroke="#C4A35A" stroke-width="1.2">
-    <circle r="9"/>
-    <circle r="4.5"/>
-    <circle r="1.5" fill="#C4A35A" stroke="none"/>
-    <line x1="-13" y1="0" x2="-10" y2="0"/>
-    <line x1="10" y1="0" x2="13" y2="0"/>
-    <line x1="0" y1="-13" x2="0" y2="-10"/>
-    <line x1="0" y1="10" x2="0" y2="13"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
   </g>
   <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
   <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Hidrômetro Classe I</text>

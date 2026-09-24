@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Portaria GM/MS nº 888/2021</title>
+  <desc id="d">Controle e vigilância da qualidade da água. Padrão de potabilidade. Controle pelo operador; vigilância pelo setor de saúde.</desc>
+  <defs>
+    <linearGradient id="h14-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#h14-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Portaria GM/MS 888/2021</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Qualidade da água para consumo humano</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <g transform="translate(56 176)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <circle cx="8" cy="8" r="7"/>
+    <path d="M8 4 v5 M8 12 v0.5"/>
+  </g>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Controle e vigilância da qualidade da água</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Altera o Anexo XX da Portaria de Consolidação nº 5/2017</text>
+
+  <rect x="36" y="246" width="648" height="196" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Padrão de potabilidade</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="56" y="304" width="188" height="80" rx="6" fill="#0B1F38"/>
+  <text x="150" y="338" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">MICROBIOLÓGICO</text>
+  <text x="150" y="360" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">critério</text>
+  <rect x="260" y="304" width="188" height="80" rx="6" fill="#0B1F38"/>
+  <text x="354" y="338" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">QUÍMICO</text>
+  <text x="354" y="360" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">critério</text>
+  <rect x="464" y="304" width="196" height="80" rx="6" fill="#0B1F38"/>
+  <text x="562" y="338" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">FÍSICO</text>
+  <text x="562" y="360" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">critério</text>
+  <text x="56" y="416" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Potabilidade: água própria para consumo humano.</text>
+
+  <rect x="36" y="460" width="316" height="236" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="460" width="316" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="488" width="316" height="12" fill="#0B1F38"/>
+  <g transform="translate(54 474)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+    <circle cx="8" cy="8" r="7"/>
+    <path d="M8 5 v6 M5 8 h6"/>
+  </g>
+  <text x="82" y="488" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Controle</text>
+  <text x="56" y="532" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Quem opera o abastecimento.</text>
+  <text x="56" y="560" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Monitora a qualidade.</text>
+  <text x="56" y="588" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Controle de qualidade:</text>
+  <text x="56" y="612" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">feito por quem opera.</text>
+  <text x="56" y="656" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Competência do operador.</text>
+  <text x="56" y="676" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Não confundir com vigilância.</text>
+
+  <rect x="368" y="460" width="316" height="236" rx="8" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="368" y="460" width="316" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="368" y="488" width="316" height="12" fill="#0B1F38"/>
+  <g transform="translate(386 474)" fill="none" stroke="#C4A35A" stroke-width="1.4">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="414" y="488" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Vigilância</text>
+  <text x="388" y="532" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Setor de saúde.</text>
+  <text x="388" y="560" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Acompanha e fiscaliza.</text>
+  <text x="388" y="588" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Vigilância em saúde:</text>
+  <text x="388" y="612" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">acompanhamento oficial.</text>
+  <text x="388" y="656" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Competência da saúde.</text>
+  <text x="388" y="676" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Não inverter com o controle.</text>
+
+  <g fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <path d="M352 560 H368"/>
+  </g>
+  <text x="360" y="552" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="18" font-weight="700">≠</text>
+
+  <rect x="36" y="714" width="648" height="182" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="714" width="648" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="742" width="648" height="12" fill="#0B1F38"/>
+  <text x="56" y="742" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">O que a portaria é — e o que não é</text>
+  <text x="56" y="786" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Altera anexo de portaria de consolidação.</text>
+  <text x="56" y="814" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Não cria norma isolada.</text>
+  <text x="56" y="842" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Água potável atende a padrões microbiológicos, químicos e físicos.</text>
+  <text x="56" y="872" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Controle (operador) ≠ vigilância (saúde).</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Controle: quem opera o abastecimento.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Vigilância: setor de saúde — acompanha e fiscaliza.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Potabilidade: critérios microbiológicos, químicos e físicos.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não inverter as competências de controle e vigilância.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#h14-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

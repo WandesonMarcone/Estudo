@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Lei nº 9.605/1998 — Crimes ambientais</title>
+  <desc id="d">Define condutas lesivas ao meio ambiente e sanções penais e administrativas, aplicáveis a pessoas físicas e jurídicas. Abrange poluição, recursos hídricos, fauna e flora.</desc>
+  <defs>
+    <linearGradient id="h16-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#h16-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Lei nº 9.605/1998</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Crimes ambientais — sanções penais e administrativas</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <g transform="translate(56 176)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Condutas lesivas ao meio ambiente</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Crime ambiental: conduta tipificada em lei</text>
+
+  <rect x="36" y="246" width="648" height="232" rx="8" fill="#EDE8DB" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="276" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Temas principais</text>
+  <line x1="56" y1="286" x2="176" y2="286" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="56" y="304" width="144" height="108" rx="6" fill="#0B1F38"/>
+  <g transform="translate(118 328)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <circle cx="0" cy="8" r="8"/>
+    <path d="M-4 8 h8"/>
+  </g>
+  <text x="128" y="372" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">POLUIÇÃO</text>
+  <text x="128" y="392" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">infração ambiental</text>
+  <rect x="212" y="304" width="144" height="108" rx="6" fill="#0B1F38"/>
+  <g transform="translate(284 328)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <path d="M-8 14 Q0 0 8 14"/>
+    <path d="M-4 10 Q0 4 4 10"/>
+  </g>
+  <text x="284" y="372" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">HÍDRICOS</text>
+  <text x="284" y="392" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">uso irregular</text>
+  <rect x="368" y="304" width="144" height="108" rx="6" fill="#0B1F38"/>
+  <g transform="translate(440 328)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <ellipse cx="0" cy="10" rx="10" ry="6"/>
+    <circle cx="-4" cy="8" r="1.4" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="440" y="372" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">FAUNA</text>
+  <text x="440" y="392" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">danos</text>
+  <rect x="524" y="304" width="136" height="108" rx="6" fill="#0B1F38"/>
+  <g transform="translate(592 324)" fill="none" stroke="#C4A35A" stroke-width="1.5">
+    <path d="M0 16 L0 4 M0 4 L-6 10 M0 4 L6 10"/>
+    <circle cx="0" cy="2" r="2"/>
+  </g>
+  <text x="592" y="372" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">FLORA</text>
+  <text x="592" y="392" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="11">danos</text>
+  <text x="56" y="448" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">A lei define crimes e sanções por essas condutas.</text>
+
+  <rect x="36" y="496" width="316" height="196" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="496" width="316" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="524" width="316" height="12" fill="#0B1F38"/>
+  <text x="56" y="524" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Quem responde</text>
+  <rect x="56" y="556" width="132" height="64" rx="6" fill="#0B1F38"/>
+  <text x="122" y="594" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Pessoa física</text>
+  <rect x="200" y="556" width="132" height="64" rx="6" fill="#C4A35A"/>
+  <text x="266" y="594" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Pessoa jurídica</text>
+  <text x="56" y="650" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">PJ também pode ser responsabilizada.</text>
+  <text x="56" y="672" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Não é só a pessoa física.</text>
+
+  <rect x="368" y="496" width="316" height="196" rx="8" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="368" y="496" width="316" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="368" y="524" width="316" height="12" fill="#0B1F38"/>
+  <text x="388" y="524" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Duas naturezas</text>
+  <text x="388" y="572" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Penal: imputação de pena.</text>
+  <text x="388" y="596" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Administrativa: multa e medidas.</text>
+  <text x="388" y="636" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Não é apenas sanção civil.</text>
+  <text x="388" y="660" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Natureza penal e administrativa.</text>
+
+  <rect x="36" y="710" width="648" height="186" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="740" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Sanções previstas</text>
+  <line x1="56" y1="750" x2="176" y2="750" stroke="#C4A35A" stroke-width="1.4"/>
+  <rect x="56" y="766" width="148" height="56" rx="6" fill="#0B1F38"/>
+  <text x="130" y="800" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">privativa de liberdade</text>
+  <rect x="216" y="766" width="148" height="56" rx="6" fill="#0B1F38"/>
+  <text x="290" y="800" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">restritiva de direitos</text>
+  <rect x="376" y="766" width="132" height="56" rx="6" fill="#0B1F38"/>
+  <text x="442" y="800" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">multas</text>
+  <rect x="520" y="766" width="140" height="56" rx="6" fill="#C4A35A"/>
+  <text x="590" y="800" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">administrativas</text>
+  <text x="56" y="854" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não confundir com a PNMA (Lei 6.938/1981) nem com o Código Florestal.</text>
+  <text x="56" y="876" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Sanção administrativa: penalidade da administração, como multa.</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Define crimes e sanções por condutas lesivas ao ambiente.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Aplica-se a pessoas físicas e jurídicas.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Natureza penal e administrativa — não só civil.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Não confundir com PNMA (Lei 6.938/1981) nem Código Florestal.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#h16-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1320" width="100%" height="100%" role="img" aria-labelledby="t d">
+  <title id="t">Fonema e acentuação</title>
+  <desc id="d">Fonema é a unidade sonora; sílaba agrupa fonemas em torno de uma vogal. Acentuação: oxítonas, paroxítonas e proparoxítonas. Acordo Ortográfico.</desc>
+  <defs>
+    <linearGradient id="p10-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122A4C"/>
+      <stop offset="1" stop-color="#081526"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1320" fill="#F4F0E6"/>
+  <rect x="24" y="148" width="672" height="1072" fill="none" stroke="#D4CDB8" stroke-width="1"/>
+  <path d="M24 160 h14 M24 148 v14 M696 160 h-14 M696 148 v14 M24 1206 h14 M24 1220 v-14 M696 1206 h-14 M696 1220 v-14" fill="none" stroke="#C4A35A" stroke-width="1.4"/>
+
+  <rect width="720" height="132" fill="url(#p10-navy)"/>
+  <line x1="36" y1="22" x2="128" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <line x1="592" y1="22" x2="684" y2="22" stroke="#C4A35A" stroke-width="1.3"/>
+  <circle cx="36" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="128" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="592" cy="22" r="2.2" fill="#C4A35A"/>
+  <circle cx="684" cy="22" r="2.2" fill="#C4A35A"/>
+  <g transform="translate(360 28)" aria-hidden="true">
+    <g transform="scale(0.0544) translate(-234 -275.3)">
+      <polygon points="225,0 471,144 471,402 237,550 0,410 0,146" fill="#C4A35A"/>
+      <polygon points="226.3,38.5 437.8,162.4 437.8,384.3 236.6,511.5 32.8,391.1 32.8,164.1" fill="#0B1F38"/>
+      <polygon points="227.2,66.1 414.1,175.5 414.1,371.6 236.3,484.1 56.2,377.7 56.2,177" fill="#173B5F"/>
+      <polygon points="228.1,93.6 390.4,188.7 390.4,358.9 236,456.6 79.6,364.2 79.6,190" fill="#0B1F38"/>
+      <path fill="#E2C77A" fill-rule="evenodd" stroke="#061522" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill" d="M173 103L151 120L0 405L45 427L96 327L246 327L303 436L342 410L295 319L372 319L401 271L268 269L185 107ZM174 189L221 282L121 283ZM238 74L238 183L275 253L294 253L295 162L415 235L412 174Z"/>
+      <polygon points="52,432 55,439 171,505 171,493 165,482 61,422" fill="#173B5F"/>
+    </g>
+  </g>
+  <text x="360" y="62" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.2">ALVO FARDADO</text>
+  <text x="360" y="96" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Fonema e acentuação</text>
+  <text x="360" y="118" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Tonicidade e ortografia</text>
+
+  <rect x="36" y="156" width="648" height="72" rx="6" fill="#0B1F38"/>
+  <text x="360" y="186" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Fonema é som; sílaba agrupa fonemas em torno de uma vogal</text>
+  <text x="360" y="210" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Acentuação segue a posição da sílaba tônica</text>
+
+  <rect x="36" y="246" width="200" height="200" rx="8" fill="#0B1F38"/>
+  <text x="136" y="284" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">OXÍTONA</text>
+  <text x="136" y="316" text-anchor="middle" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">última sílaba</text>
+  <text x="136" y="348" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">regras por terminação</text>
+  <text x="136" y="388" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700">FONTEMA / LETRA / SÍLABA</text>
+  <text x="136" y="416" text-anchor="middle" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">unidade sonora distintiva</text>
+
+  <rect x="252" y="246" width="200" height="200" rx="8" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="352" y="284" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">PAROXÍTONA</text>
+  <text x="352" y="316" text-anchor="middle" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">penúltima sílaba</text>
+  <text x="352" y="348" text-anchor="middle" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">regras por terminação</text>
+  <text x="352" y="388" text-anchor="middle" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Ditongos abertos,</text>
+  <text x="352" y="408" text-anchor="middle" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">hiatos e i/u tônicos</text>
+
+  <rect x="468" y="246" width="216" height="200" rx="8" fill="#C4A35A"/>
+  <text x="576" y="284" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13" font-weight="700">PROPAROXÍTONA</text>
+  <text x="576" y="316" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">antepenúltima sílaba</text>
+  <text x="576" y="360" text-anchor="middle" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Todas acentuadas</text>
+  <text x="576" y="400" text-anchor="middle" fill="#122A4C" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Hiato: duas vogais</text>
+  <text x="576" y="418" text-anchor="middle" fill="#122A4C" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">em sílabas separadas</text>
+
+  <rect x="36" y="464" width="316" height="220" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <text x="56" y="496" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Acordo Ortográfico</text>
+  <line x1="56" y1="506" x2="176" y2="506" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="56" y="540" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Vigente no Brasil desde 2009.</text>
+  <text x="56" y="564" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Suprimiu o trema,</text>
+  <text x="56" y="588" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">exceto em nomes próprios.</text>
+  <text x="56" y="624" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Hífen em prefixos</text>
+  <text x="56" y="648" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">e em palavras compostas.</text>
+  <text x="56" y="672" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Ortografia fixa a grafia correta.</text>
+
+  <rect x="368" y="464" width="316" height="220" rx="8" fill="#F7F3E8" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="388" y="496" fill="#0B1F38" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Armadilhas</text>
+  <line x1="388" y1="506" x2="508" y2="506" stroke="#C4A35A" stroke-width="1.4"/>
+  <text x="388" y="540" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Acento diferencial residual:</text>
+  <text x="388" y="564" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">pôde / pode</text>
+  <text x="388" y="600" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Nem todo i ou u tônico</text>
+  <text x="388" y="624" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">é acentuado: hiatos e</text>
+  <text x="388" y="648" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">regras específicas.</text>
+  <text x="388" y="672" fill="#6B665B" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12">Não confundir letra e fonema.</text>
+
+  <rect x="36" y="702" width="648" height="194" rx="8" fill="#F7F3E8" stroke="#D4CDB8" stroke-width="1.2"/>
+  <rect x="36" y="702" width="648" height="40" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="730" width="648" height="12" fill="#0B1F38"/>
+  <text x="56" y="730" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Tonicidade e grafia</text>
+  <text x="56" y="774" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Classificação: oxítona, paroxítona, proparoxítona.</text>
+  <text x="56" y="802" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Regras de acentuação por terminação.</text>
+  <text x="56" y="830" fill="#3A372F" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="15">Fonema: unidade sonora distintiva da língua.</text>
+  <text x="56" y="866" fill="#9A7420" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Acordo Ortográfico da Língua Portuguesa (1990).</text>
+
+  <rect x="36" y="916" width="648" height="292" rx="8" fill="#0B1F38"/>
+  <rect x="36" y="916" width="8" height="292" rx="4" fill="#C4A35A"/>
+  <g transform="translate(64 940)" fill="none" stroke="#C4A35A" stroke-width="1.6">
+    <path d="M8 1 L15 14 H1 Z"/>
+    <line x1="8" y1="6" x2="8" y2="9.5"/>
+    <circle cx="8" cy="12.2" r="0.8" fill="#C4A35A" stroke="none"/>
+  </g>
+  <text x="90" y="956" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">PONTO DE PROVA</text>
+  <text x="64" y="996" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Proparoxítonas são todas acentuadas.</text>
+  <text x="64" y="1028" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">O Acordo Ortográfico suprimiu o trema, exceto em nomes próprios.</text>
+  <text x="64" y="1060" fill="#F8F4EA" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="16">Acento diferencial residual: pôde/pode.</text>
+  <line x1="64" y1="1080" x2="652" y2="1080" stroke="#C4A35A" stroke-width="0.8" opacity="0.45"/>
+  <text x="64" y="1112" fill="#C9C2B0" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="14">Nem todo i ou u tônico é acentuado.</text>
+  <text x="64" y="1182" fill="#8A8374" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="13">Atenção na prova</text>
+
+  <rect x="0" y="1260" width="720" height="60" fill="url(#p10-navy)"/>
+  <line x1="220" y1="1290" x2="260" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <line x1="460" y1="1290" x2="500" y2="1290" stroke="#C4A35A" stroke-width="1"/>
+  <text x="360" y="1295" text-anchor="middle" fill="#C4A35A" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">ALVO FARDADO | RESUMO VISUAL</text>
+</svg>
