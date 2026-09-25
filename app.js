@@ -973,7 +973,6 @@
     if (name === "performance") renderPerformance();
     if (name === "simulado") renderSimulado();
     if (name === "questions") renderQuestion();
-    if (name === "videos") renderVideos();
     if (name === "plan") renderPlan();
     if (name === "review") renderReview();
     if (name === "home") renderHome();
@@ -1385,6 +1384,17 @@
     "ger-13.svg",
     "ger-14.svg",
     "ger-15.svg",
+    "ger-16.svg",
+    "ger-17.svg",
+    "ger-18.svg",
+    "ger-19.svg",
+    "ger-20.svg",
+    "leg-01.svg",
+    "leg-02.svg",
+    "leg-03.svg",
+    "leg-04.svg",
+    "leg-05.svg",
+    "leg-06.svg",
     "mat-01.svg",
     "mat-02.svg",
     "mat-03.svg",
@@ -1712,7 +1722,9 @@
     }
     var missingVideo = topicVideos.length > 0 && topicVideos.every(function (v) { return v.semVideo; });
     var topicContent = (window.DATA_CONTENT || {})[topic.id];
-    var tab = currentTopicTab || "conteudo";
+    var bankStats = topicBankStats(topic.id);
+    var visuals = topicVisualSummaries(topic.id);
+    var official = topicOfficialMaterials(topic.id);
 
     var html = '<div class="topic-layout">';
     html += '<div class="card topic-hero" style="border-left:5px solid ' + info.color + '">' +
@@ -1726,16 +1738,9 @@
       '<div class="topic-sub">Progresso ' + progress + "%</div>" +
       "</div>";
 
-    html += '<div class="topic-tabs" role="tablist">' +
-      '<button type="button" class="topic-tab' + (tab === "conteudo" ? " active" : "") + '" data-tab="conteudo" role="tab">Conteúdo</button>' +
-      '<button type="button" class="topic-tab' + (tab === "aula" ? " active" : "") + '" data-tab="aula" role="tab">Aula</button>' +
-      '<button type="button" class="topic-tab' + (tab === "questoes" ? " active" : "") + '" data-tab="questoes" role="tab">Questões</button>' +
-      '<button type="button" class="topic-tab' + (tab === "progresso" ? " active" : "") + '" data-tab="progresso" role="tab">Progresso</button>' +
-      "</div>";
-
     html += '<div class="topic-panels">';
 
-    html += '<section class="card topic-panel' + (tab === "conteudo" ? " active" : "") + '" data-panel="conteudo">';
+    html += '<section class="card topic-panel" data-panel="conteudo">';
     html += "<h2>Conteúdo</h2>";
     if (topicContent && topicContent.resumo) {
       html += '<div class="content-block"><h3 class="sec-sub">Resumo</h3><p class="small">' + topicContent.resumo + "</p></div>";
@@ -1752,12 +1757,6 @@
       html += '<div class="content-block"><h3 class="sec-sub">Termos e definições</h3><div class="term-list">' +
         topicContent.termos.map(function (t) {
           return '<div class="term-item"><strong>' + t.t + "</strong><span>" + t.d + "</span></div>";
-        }).join("") + "</div></div>";
-    }
-    if (topicContent && topicContent.pontos && topicContent.pontos.length) {
-      html += '<div class="content-block highlight-block"><h3 class="sec-sub">Pontos importantes</h3><div class="subtopic-list">' +
-        topicContent.pontos.map(function (p) {
-          return '<div class="subtopic-item"><span>' + p + "</span></div>";
         }).join("") + "</div></div>";
     }
     if (topicContent && topicContent.atencao && topicContent.atencao.length) {
@@ -1784,11 +1783,27 @@
     if (topicContent && topicContent.atualizacao) {
       html += '<div class="notice">Conteúdo sujeito a atualização periódica. Revise com fontes oficiais antes da prova.</div>';
     }
-    html += materialsSectionHtml(topic, mainVideos, extraVideos, missingVideo, topicVideos, videos, questions, topicBankStats(topic.id));
+    if (official.length) {
+      html += '<div class="content-block"><h3 class="sec-sub">Material oficial</h3>';
+      official.forEach(function (item) { html += officialMaterialBlock(item); });
+      html += "</div>";
+    }
     html += "</section>";
 
-    html += '<section class="card topic-panel' + (tab === "aula" ? " active" : "") + '" data-panel="aula">';
-    html += "<h2>Aula</h2>";
+    html += '<section class="card topic-panel" data-panel="pontos">';
+    html += "<h2>Pontos importantes</h2>";
+    if (topicContent && topicContent.pontos && topicContent.pontos.length) {
+      html += '<div class="content-block highlight-block"><div class="subtopic-list">' +
+        topicContent.pontos.map(function (p) {
+          return '<div class="subtopic-item"><span>' + p + "</span></div>";
+        }).join("") + "</div></div>";
+    } else {
+      html += '<p class="muted small">Nenhum ponto importante cadastrado para este assunto.</p>';
+    }
+    html += "</section>";
+
+    html += '<section class="card topic-panel" data-panel="aula">';
+    html += "<h2>Videoaulas</h2>";
     if (mainVideos.length || extraVideos.length) {
       mainVideos.forEach(function (v) { html += topicVideoBlock(v); });
       extraVideos.forEach(function (v) { html += topicVideoBlock(v); });
@@ -1802,9 +1817,17 @@
     }
     html += "</section>";
 
-    html += '<section class="card topic-panel' + (tab === "questoes" ? " active" : "") + '" data-panel="questoes">';
-    html += "<h2>Questões</h2>";
-    var bankStats = topicBankStats(topic.id);
+    html += '<section class="card topic-panel" data-panel="visual">';
+    html += "<h2>Resumo visual</h2>";
+    if (visuals.length) {
+      visuals.forEach(function (item) { html += visualSummaryBlock(item); });
+    } else {
+      html += '<p class="muted small">Resumo visual ainda não cadastrado para este assunto.</p>';
+    }
+    html += "</section>";
+
+    html += '<section class="card topic-panel" data-panel="questoes">';
+    html += "<h2>Questões deste assunto</h2>";
     if (bankStats.total) {
       html += '<p class="muted small">Banco: ' + bankStats.total + " questões (" + bankStats.facil + " fáceis, " +
         bankStats.media + " médias, " + bankStats.dificil + " difíceis).</p>";
@@ -1821,8 +1844,8 @@
     }
     html += "</section>";
 
-    html += '<section class="card topic-panel' + (tab === "progresso" ? " active" : "") + '" data-panel="progresso">';
-    html += "<h2>Progresso</h2>";
+    html += '<section class="card topic-panel" data-panel="progresso">';
+    html += "<h2>Meu progresso neste assunto</h2>";
     html += '<div class="stat-row">' +
       '<div class="stat-pill"><strong>' + progress + '%</strong><span>progresso</span></div>' +
       '<div class="stat-pill"><strong>' + topicBankSize(topic.id) + '</strong><span>no banco</span></div>' +
@@ -1850,7 +1873,6 @@
         userVideosWraps[uv].appendChild(createUserVideoAnchor(v, "video-mini"));
       });
     }
-    bindMaterialsSwitcher(wrap);
 
     var checks = wrap.querySelectorAll("input[type=checkbox]");
     for (var i = 0; i < checks.length; i++) {
@@ -1868,22 +1890,6 @@
     var practiceBtns = wrap.querySelectorAll('[data-act="practice"]');
     for (var pb = 0; pb < practiceBtns.length; pb++) {
       practiceBtns[pb].onclick = function () { practiceTopic(topic.id); };
-    }
-
-    var tabs = wrap.querySelectorAll(".topic-tab");
-    for (var t = 0; t < tabs.length; t++) {
-      tabs[t].onclick = function (ev) {
-        currentTopicTab = ev.currentTarget.getAttribute("data-tab");
-        var allTabs = wrap.querySelectorAll(".topic-tab");
-        var allPanels = wrap.querySelectorAll(".topic-panel");
-        var k;
-        for (k = 0; k < allTabs.length; k++) {
-          allTabs[k].classList.toggle("active", allTabs[k].getAttribute("data-tab") === currentTopicTab);
-        }
-        for (k = 0; k < allPanels.length; k++) {
-          allPanels[k].classList.toggle("active", allPanels[k].getAttribute("data-panel") === currentTopicTab);
-        }
-      };
     }
   }
 
@@ -2663,6 +2669,7 @@
 
   function renderVideos() {
     var wrap = $("videos-list");
+    if (!wrap) return;
     wrap.innerHTML = "";
     var bySubject = videoTopicsBySubject();
     SUBJECT_ORDER.forEach(function (key) {
@@ -2746,6 +2753,7 @@
 
   function populateVideoSubjects() {
     var sel = $("video-subject");
+    if (!sel) return;
     sel.innerHTML = "";
     SUBJECT_ORDER.forEach(function (key) {
       var opt = document.createElement("option");
@@ -3299,7 +3307,8 @@
       renderQuestion();
     };
     $("question-shuffle").onclick = shuffleQuestions;
-    $("video-add").onclick = addVideo;
+    var videoAdd = $("video-add");
+    if (videoAdd) videoAdd.onclick = addVideo;
     $("perf-reset").onclick = function () {
       if (!confirm("Apagar todas as respostas registradas?")) return;
       state.answers = {};
