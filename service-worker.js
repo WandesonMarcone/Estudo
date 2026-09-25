@@ -1,4 +1,4 @@
-var CACHE_NAME = "dmae2026-v23";
+var CACHE_NAME = "dmae2026-v26";
 var APP_SHELL = [
   "./",
   "./index.html",

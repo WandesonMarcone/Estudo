@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f172a">
-<title>DMAE 2026 - Agente Comercial</title>
+<meta name="theme-color" content="#08111c">
+<title>ALVO FARDADO | DMAE Uberlândia 2026</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon/icon.png" type="image/png">
 <link rel="icon" href="icon/icon-192.png" type="image/png" sizes="192x192">
@@ -13,10 +13,13 @@
 </head>
 <body>
 <header class="topbar">
-  <img class="topbar-logo" src="icon/icon.png" alt="DMAE 2026" width="40" height="40">
+  <img class="topbar-logo" src="icon/icon.png" alt="ALVO FARDADO" width="40" height="40">
   <div class="topbar-title">
-    <strong>DMAE Uberlândia 2026</strong>
-    <span>Agente Comercial - Cargo 301</span>
+    <strong class="topbar-brand">ALVO FARDADO</strong>
+    <span class="topbar-meta">
+      <span class="topbar-contest">DMAE Uberlândia 2026</span>
+      <span class="topbar-role">Agente Comercial</span>
+    </span>
   </div>
   <div id="countdown" class="countdown">-</div>
 </header>
@@ -231,6 +234,67 @@
     </div>
   </section>
 
+  <section id="screen-about" class="screen">
+    <h1 class="screen-title">Sobre o Alvo Fardado</h1>
+
+    <div class="card about-brand-card">
+      <img class="about-logo" src="icon/icon.png" alt="ALVO FARDADO" width="64" height="64">
+      <div class="about-brand-copy">
+        <strong class="about-kicker">ALVO FARDADO</strong>
+        <h2>Plataforma de preparação para concursos públicos</h2>
+        <p class="muted small">Estudo organizado, revisão objetiva e acompanhamento do progresso em um só lugar.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Como funciona</h2>
+      <p class="muted small">O estudo segue o edital, do conteúdo à prática, até o desempenho.</p>
+      <ol class="about-flow">
+        <li>Edital</li>
+        <li>Matérias</li>
+        <li>Tópicos</li>
+        <li>Conteúdo</li>
+        <li>Videoaulas</li>
+        <li>Resumo visual</li>
+        <li>Questões</li>
+        <li>Revisão</li>
+        <li>Desempenho</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Recursos</h2>
+      <div class="about-resources">
+        <span>Plano de estudos</span>
+        <span>Questões</span>
+        <span>Simulados</span>
+        <span>Revisão inteligente</span>
+        <span>Desempenho</span>
+        <span>Videoaulas</span>
+        <span>Resumos visuais</span>
+        <span>Acompanhamento de progresso</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Concurso atual</h2>
+      <div class="about-contest">
+        <strong>DMAE Uberlândia 2026</strong>
+        <span>Cargo: Agente Comercial</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Objetivo</h2>
+      <p>Ajudar o estudante a organizar, estudar, revisar e acompanhar sua evolução de forma objetiva.</p>
+    </div>
+
+    <div class="card about-notice">
+      <h2>Aviso</h2>
+      <p class="muted small">A plataforma é uma ferramenta de apoio aos estudos e não substitui o edital oficial nem as fontes oficiais do concurso.</p>
+    </div>
+  </section>
+
 </main>
 
 <nav class="bottom-nav" aria-label="Navegação principal">
@@ -261,6 +325,10 @@
   <button class="nav-btn" data-screen="simulado">
     <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5.2" width="12" height="15.3" rx="2"/><path d="M9 5.2V4.2A1.2 1.2 0 0 1 10.2 3h3.6A1.2 1.2 0 0 1 15 4.2v1"/><path d="M9 11h6M9 14.5h4"/></svg>
     <span>Simulado</span>
+  </button>
+  <button class="nav-btn" data-screen="about">
+    <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11.2V16"/><circle cx="12" cy="8.2" r="0.85" fill="currentColor" stroke="none"/></svg>
+    <span>Sobre</span>
   </button>
 </nav>
 
