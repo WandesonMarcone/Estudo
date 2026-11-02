@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{rankFor,grade}from'../src/core.js';test('rank progression',()=>{assert.equal(rankFor(0),'Recruta');assert.equal(rankFor(300),'Cabo')});test('grading awards more XP for correct answer',()=>{assert.deepEqual(grade(1,1),{correct:true,xp:20});assert.equal(grade(0,1).correct,false)});
